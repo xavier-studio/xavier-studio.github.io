@@ -8,7 +8,7 @@ window.T = {
 
   'hero.h': { en: 'I RAN THE FRONT DESK <em>before</em> I DESIGNED THE SIGN.', zh: '设计招牌之前，<em>我先站过前台。</em>' },
   'hero.sub': { en: 'SMALL SHOPS, <em>made to look</em> GRAND.', zh: '小店，<em>也要</em>有大牌的样子。' },
-  'hero.body': { en: 'Brands, websites and short films for small shops in Malaysia and Cambodia, by Melvin Pang, who spent fifteen years in hotels, HR and operations before opening the studio.', zh: '为马来西亚和柬埔寨的小店做品牌、网站和短片。主理人 Melvin Pang（彭国浩）开工作室之前，在酒店、人事与营运岗位上做了十五年。' },
+  'hero.body': { en: 'Brands, websites and short films for small shops, by Melvin Pang, who spent fifteen years in hotels, HR and operations before opening the studio.', zh: '为小店做品牌、网站和短片。主理人 Melvin Pang（彭国浩）开工作室之前，在酒店、人事与营运岗位上做了十五年。' },
   'hero.cta': { en: 'Tell us about your shop', zh: '跟我们说说你的店' }, 'hero.work': { en: 'See the work ↓', zh: '看作品 ↓' },
   'hero.cap': { en: 'Melvin Pang, founder', zh: '创办人 Melvin Pang' },
 
@@ -46,17 +46,17 @@ window.T = {
   'svc.wa': { en: 'WhatsApp {k} →', zh: 'WhatsApp 发 {k} →' },
 
   'studio.h': { en: 'The operator.', zh: '懂经营的设计师。' },
-  'studio.p1': { en: 'Xavier Studio is run by Melvin Pang. Before the studio, he spent fifteen years in hotels, HR and operations across Malaysia and Cambodia: front desks, rosters and the WhatsApp chat at 11pm.', zh: 'Xavier Studio 由 Melvin Pang（彭国浩）主理。开工作室之前，他在马来西亚和柬埔寨的酒店、人事与营运岗位上做了十五年：前台、排班，还有晚上十一点的 WhatsApp 对话。' },
+  'studio.p1': { en: 'Xavier Studio is run by Melvin Pang. Before the studio, he spent fifteen years in hotels, HR and operations: front desks, rosters and the WhatsApp chat at 11pm.', zh: 'Xavier Studio 由 Melvin Pang（彭国浩）主理。开工作室之前，他在酒店、人事与营运岗位上做了十五年：前台、排班，还有晚上十一点的 WhatsApp 对话。' },
   'studio.p2': { en: 'So the work starts from how a shop really runs, not only from how the logo looks. Every project is directed by him, with AI tools doing the heavy rendering. Ask, and he will tell you which is which.',
     zh: '所以设计从一间店真正怎么运作出发，而不只是标志好不好看。每个项目都由他亲自把关，AI 工具负责繁重的渲染。哪些是人做的、哪些是 AI，问他就会照实说。' },
   'studio.bh': { en: 'Before the studio', zh: '创办工作室之前' },
   'studio.v1': { en: '15', zh: '15 年' },
-  'studio.b1': { en: 'Ran a 90-room hotel in Kuala Lumpur day to day: front desk, housekeeping, online rates and the complaints.', zh: '在吉隆坡打理一间 90 间房的酒店：前台、客房、网上房价，还有客人投诉。' },
-  'studio.b2': { en: 'General manager of a hill resort in Pahang.', zh: '在彭亨一间山间度假村做总经理。' },
-  'studio.b3': { en: 'Five years running HR for a regional group based in Cambodia, and leading its visual marketing team from 2024.', zh: '在柬埔寨一家区域集团管人事五年，2024 年起同时带视觉营销团队。' },
+  'studio.b1': { en: 'Ran a 90-room city hotel day to day: front desk, housekeeping, online rates and the complaints.', zh: '打理一间 90 间房的城市酒店：前台、客房、网上房价，还有客人投诉。' },
+  'studio.b2': { en: 'General manager of a hill resort.', zh: '在一间山间度假村做总经理。' },
+  'studio.b3': { en: 'Five years running HR for a regional group, and leading its visual marketing team from 2024.', zh: '在一家区域集团管人事五年，2024 年起同时带视觉营销团队。' },
   'studio.b4': { en: 'Now: brands, websites and films for shops like those.', zh: '现在：为这样的店做品牌、网站和影片。' },
-  'studio.k1': { en: 'Years in operations', zh: '营运经验' }, 'studio.k2': { en: 'Based', zh: '所在地' }, 'studio.k3': { en: 'Languages', zh: '语言' },
-  'studio.v2': { en: 'Phnom Penh · Kuala Lumpur', zh: '金边 · 吉隆坡' },
+  'studio.k1': { en: 'Years in operations', zh: '营运经验' }, 'studio.k2': { en: 'Replies', zh: '回复' }, 'studio.k3': { en: 'Languages', zh: '语言' },
+  'studio.v2': { en: 'Usually within the hour', zh: '通常一小时内' }, 'f.s2': { en: 'Small shops anywhere, on WhatsApp.', zh: '通过 WhatsApp，与各地小店合作。' },
 
   'c.h': { en: 'Tell us about your shop.', zh: '跟我们说说你的店。' },
   'c.p': { en: 'Three short answers. The button opens WhatsApp with your message already written, so you only press send.', zh: '回答三个小问题。按钮会打开 WhatsApp，消息已经替你写好，你只需按发送。' },
