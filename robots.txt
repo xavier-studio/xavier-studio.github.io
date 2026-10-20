@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xavier-studio.github.io/sitemap.xml
