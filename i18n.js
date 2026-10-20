@@ -65,7 +65,7 @@ window.T = {
   'c.n3': { en: 'A short film', zh: '短片' }, 'c.n4': { en: 'A free website audit', zh: '免费网站诊断' },
   'c.btn': { en: 'Open WhatsApp with my message', zh: '在 WhatsApp 打开我的消息' },
   'c.note': { en: 'We usually reply within the hour. Or message +60 12‑527 2682 directly. Nothing is stored on this page.', zh: '我们通常一小时内回复。也可以直接发消息到 +60 12‑527 2682。本页不会保存你输入的任何内容。' },
-  'c.ph.what': { en: 'kopitiam in Ipoh…', zh: '怡保的咖啡店……' },
+  'c.ph.what': { en: 'kopitiam on Market Street…', zh: '市场街的咖啡店……' },
   'c.msg.hi': { en: 'Hi Melvin{name}.', zh: '你好 Melvin{name}。' }, 'c.msg.name': { en: ', this is {n}', zh: '，我是{n}' },
   'c.msg.sell': { en: 'My shop: {w}.', zh: '我的店：{w}。' },
   'c.msg.BRAND': { en: 'I would like a brand.', zh: '我想做一个品牌。' }, 'c.msg.WEB': { en: 'I would like a website.', zh: '我想做一个网站。' },
