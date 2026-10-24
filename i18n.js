@@ -4,7 +4,7 @@ window.T = {
   'nav.studio': { en: 'Studio', zh: '工作室' }, 'nav.contact': { en: 'Contact', zh: '联系' },
   'nav.services': { en: 'Services', zh: '服务' }, 'nav.menu': { en: 'Menu', zh: '菜单' }, 'nav.close': { en: 'Close', zh: '关闭' },
   'nav.wa': { en: 'Message on WhatsApp', zh: '在 WhatsApp 留言' },
-  'c.reply': { en: 'We usually reply on WhatsApp within the hour.', zh: '我们通常一小时内在 WhatsApp 回复。' },
+  'c.reply': { en: 'We reply on WhatsApp the same day.', zh: '我们当天在 WhatsApp 回复。' },
 
   'hero.h': { en: 'I RAN THE FRONT DESK <em>before</em> I DESIGNED THE SIGN.', zh: '设计招牌之前，<em>我先站过前台。</em>' },
   'hero.sub': { en: 'SMALL SHOPS, <em>made to look</em> GRAND.', zh: '小店，<em>也要</em>有大牌的样子。' },
@@ -56,7 +56,7 @@ window.T = {
   'studio.b3': { en: 'Five years running HR for a regional group, and leading its visual marketing team from 2024.', zh: '在一家区域集团管人事五年，2024 年起同时带视觉营销团队。' },
   'studio.b4': { en: 'Now: brands, websites and films for shops like those.', zh: '现在：为这样的店做品牌、网站和影片。' },
   'studio.k1': { en: 'Years in operations', zh: '营运经验' }, 'studio.k2': { en: 'Replies', zh: '回复' }, 'studio.k3': { en: 'Languages', zh: '语言' },
-  'studio.v2': { en: 'Usually within the hour', zh: '通常一小时内' }, 'f.s2': { en: 'Small shops anywhere, on WhatsApp.', zh: '通过 WhatsApp，与各地小店合作。' },
+  'studio.v2': { en: 'Same day', zh: '当天' }, 'f.s2': { en: 'Small shops anywhere, on WhatsApp.', zh: '通过 WhatsApp，与各地小店合作。' },
 
   'c.h': { en: 'Tell us about your shop.', zh: '跟我们说说你的店。' },
   'c.p': { en: 'Three short answers. The button opens WhatsApp with your message already written, so you only press send.', zh: '回答三个小问题。按钮会打开 WhatsApp，消息已经替你写好，你只需按发送。' },
@@ -64,7 +64,7 @@ window.T = {
   'c.need': { en: 'What you need', zh: '你需要什么' }, 'c.n1': { en: 'A brand', zh: '品牌' }, 'c.n2': { en: 'A website', zh: '网站' },
   'c.n3': { en: 'A short film', zh: '短片' }, 'c.n4': { en: 'A free website audit', zh: '免费网站诊断' },
   'c.btn': { en: 'Open WhatsApp with my message', zh: '在 WhatsApp 打开我的消息' },
-  'c.note': { en: 'We usually reply within the hour. Or message +60 12‑527 2682 directly. Nothing is stored on this page.', zh: '我们通常一小时内回复。也可以直接发消息到 +60 12‑527 2682。本页不会保存你输入的任何内容。' },
+  'c.note': { en: 'We reply the same day. Or message +60 12‑527 2682 directly. Nothing is stored on this page.', zh: '我们当天回复。也可以直接发消息到 +60 12‑527 2682。本页不会保存你输入的任何内容。' },
   'c.ph.what': { en: 'kopitiam on Market Street…', zh: '市场街的咖啡店……' },
   'c.msg.hi': { en: 'Hi Melvin{name}.', zh: '你好 Melvin{name}。' }, 'c.msg.name': { en: ', this is {n}', zh: '，我是{n}' },
   'c.msg.sell': { en: 'My shop: {w}.', zh: '我的店：{w}。' },
