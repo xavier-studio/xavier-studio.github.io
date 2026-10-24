@@ -13,15 +13,15 @@ window.T = {
   'hero.cap': { en: 'Melvin Pang, founder', zh: '创办人 Melvin Pang' },
 
   'three.h': { en: 'Small shops, first.', zh: '小店优先。' },
-  'three.p': { en: 'A kopitiam, a street-food stall and a skin clinic: three of the sixteen projects below.', zh: '一间咖啡店、一个街头小吃摊、一家医美诊所：下面十六个作品中的三个。' },
+  'three.p': { en: 'A street-food stall, a kopitiam and a skin clinic: three of the seventeen projects below.', zh: '一个街头小吃摊、一间咖啡店、一家医美诊所：下面十七个作品中的三个。' },
 
   'index.h': { en: 'The whole collection.', zh: '全部作品。' },
-  'index.p': { en: 'Sixteen projects, built the way we would build yours: studio concepts, one pitch and a set of samples, each clearly labelled. Drag the ring to turn it, point at a brand to stop it, click to open it.', zh: '十六个作品，都按给你做品牌的标准来做：工作室概念、一份提案和一组样品，每一件都标明是哪一种。拖动圆环转动，鼠标移到品牌上就停，点击即可打开。' },
+  'index.p': { en: 'Seventeen projects, built the way we would build yours: studio concepts, one pitch and a set of samples, each clearly labelled. Drag the ring to turn it, point at a brand to stop it, click to open it.', zh: '十七个作品，都按给你做品牌的标准来做：工作室概念、一份提案和一组样品，每一件都标明是哪一种。拖动圆环转动，鼠标移到品牌上就停，点击即可打开。' },
   'film': { en: 'Film', zh: '影片' },
   'hall.open': { en: 'Open the full project', zh: '查看完整作品' }, 'hall.hint': { en: 'Drag to explore', zh: '拖动浏览' },
-  'index.pt': { en: 'Sixteen projects, built the way we would build yours: studio concepts, one pitch and a set of samples, each clearly labelled. Swipe the ring to turn it, tap a brand to open it.', zh: '十六个作品，都按给你做品牌的标准来做：工作室概念、一份提案和一组样品，每一件都标明是哪一种。左右滑动圆环转动，点一下品牌即可打开。' },
+  'index.pt': { en: 'Seventeen projects, built the way we would build yours: studio concepts, one pitch and a set of samples, each clearly labelled. Swipe the ring to turn it, tap a brand to open it.', zh: '十七个作品，都按给你做品牌的标准来做：工作室概念、一份提案和一组样品，每一件都标明是哪一种。左右滑动圆环转动，点一下品牌即可打开。' },
   'hall.hintt': { en: 'Swipe to explore', zh: '左右滑动浏览' },
-  'hall.paused': { en: 'Paused', zh: '已暂停' }, 'hall.list': { en: 'See all 16 as a list', zh: '以列表查看全部 16 个作品' },
+  'hall.paused': { en: 'Paused', zh: '已暂停' }, 'hall.list': { en: 'See all 17 as a list', zh: '以列表查看全部 17 个作品' },
   'hall.imgs': { en: '{n} images', zh: '{n} 张图片' }, 'hall.film': { en: ' + a short film', zh: ' + 一支短片' },
 
   'films.h': { en: 'Films, made in‑house.', zh: '影片，全部自制。' },

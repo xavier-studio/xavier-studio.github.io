@@ -7,7 +7,7 @@ window.XS = {
     sample:  { en: 'Studio samples', zh: '工作室样品' }
   },
 
-  /* 16 projects, in collection order (the same order as the Mirror Hall ring) */
+  /* 17 projects, in collection order (the same order as the Mirror Hall ring) */
   projects: [
     { slug: 'tiga-sudu', name: 'Tiga Sudu', label: 'concept', film: 'tiga-sudu',
       sector: { en: 'Kopitiam · shophouse breakfast', zh: '咖啡店 · 店屋早餐' },
@@ -17,6 +17,10 @@ window.XS = {
       sector: { en: 'Street food · cart & delivery', zh: '街头小吃 · 推车与外卖' },
       blurb: { en: 'A loud num pang brand: one street cart, one delivery bag, and a baguette with a grin.', zh: '够响亮的法棍三明治品牌：一辆推车、一个外卖袋，和一根咧嘴笑的法棍。' },
       made: { en: ['Name & story', 'Grinning-baguette logo', 'Cart livery', 'Wrap paper', 'Poster system', 'Brand film'], zh: ['命名与故事', '笑脸法棍标志', '推车涂装', '包装纸', '海报系统', '品牌影片'] } },
+    { slug: 'sour-hour', name: 'Sour Hour', label: 'concept', film: null,
+      sector: { en: 'Sparkling sours · pop-up drinks', zh: '气泡酸饮 · 快闪饮品' },
+      blurb: { en: 'A cheeky sparkling-sour drinks brand that lives at pop-ups. Everything it needs on the day: a poster, a menu you can read across a bar, labels and stories.', zh: '一个调皮的气泡酸饮品牌，主场就在快闪摊。活动当天需要的都在这里：海报、隔着吧台也看得清的菜单、瓶标和快拍。' },
+      made: { en: ['Lime-clock mark', 'Pop-up poster', 'Printed menu', 'Counter board', 'Bottle labels', 'Stories, cup & stamp card'], zh: ['青柠时钟标志', '快闪海报', '印刷菜单', '柜台看板', '瓶身标签', '快拍、杯贴与集点卡'] } },
     { slug: 'black-lot', name: 'Black Lot', label: 'concept', film: null,
       sector: { en: 'Pepper · single estate', zh: '胡椒 · 单一庄园' },
       blurb: { en: 'Single-estate Kampot pepper sold the way fine wine is: one harvest, one numbered lot.', zh: '像好酒一样卖的单一庄园贡布胡椒：一次收成，一个编号批次。' },

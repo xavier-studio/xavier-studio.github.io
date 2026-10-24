@@ -20,7 +20,7 @@
 
   /* ---------- small shops first: three of the sixteen ---------- */
   function renderThree() {
-    $('#three-row').innerHTML = ['tiga-sudu', 'pang-pang', 'skinlab-21'].map(slug => { const i = bySlug(slug), p = X.projects[i];
+    $('#three-row').innerHTML = ['pang-pang', 'tiga-sudu', 'skinlab-21'].map(slug => { const i = bySlug(slug), p = X.projects[i];
       return `<a class="feat" href="#index" data-i="${i}"><img src="assets/work/${slug}/cover.webp" srcset="assets/work/${slug}/thumb.webp 640w, assets/work/${slug}/cover.webp 1100w" sizes="(max-width: 900px) 80vw, 31vw" alt="${esc(p.name)}" width="800" height="1000" loading="lazy">
         <span class="feat__cap"><b>${esc(p.name.toUpperCase())}</b><i>${esc(sector(p))}</i><small>${esc(label(p))}</small></span></a>`; }).join('');
   }
@@ -48,8 +48,9 @@
 
   /* ---------- case viewer ---------- */
   let cur = null, manifest = null, lastFocus = null;
-  fetch('assets/work/manifest.json').then(r => r.json()).then(m => { manifest = m; }).catch(() => {});
+  fetch('assets/work/manifest.json').then(r => r.json()).then(m => { manifest = m; fromHash(); }).catch(() => { manifest = {}; fromHash(); });
   function openCase(i, quiet) { const p = X.projects[i], V = $('#viewer'); cur = i;
+    if (!quiet && location.hash !== '#' + p.slug) history.replaceState(null, '', '#' + p.slug);
     $('#v-pos').textContent = fill(t('v.pos'), { i: N2(i + 1), n: N2(X.projects.length) });
     $('#v-name').textContent = p.name; $('#v-sector').textContent = sector(p); $('#v-label').textContent = label(p);
     $('#vh-pos').textContent = $('#v-pos').textContent; $('#vh-name').textContent = p.name; $('#vh-label').textContent = label(p); $('#v-blurb').textContent = tr(p.blurb);
@@ -65,9 +66,11 @@
       if (V.hidden) { lastFocus = document.activeElement; V.hidden = false; document.body.style.overflow = 'hidden'; inert(true); $('#v-close').focus(); }
       $('#v-media').scrollTop = 0; V.scrollTop = 0;
       if (A && !RM) anime({ targets: ['#v-name', '#v-sector', '#v-label', '#v-blurb', '#v-made', '#v-media > *:first-child'], opacity: [0, 1], translateY: [16, 0], delay: anime.stagger(60), duration: 700, easing: EASE }); } }
-  function closeCase() { $('#viewer').hidden = true; cur = null; document.body.style.overflow = ''; inert(false); $$('#v-media video').forEach(v => v.pause()); if (lastFocus) lastFocus.focus(); }
+  function closeCase() { if (location.hash && bySlug(location.hash.slice(1)) >= 0) history.replaceState(null, '', location.pathname + location.search); $('#viewer').hidden = true; cur = null; document.body.style.overflow = ''; inert(false); $$('#v-media video').forEach(v => v.pause()); if (lastFocus) lastFocus.focus(); }
   document.addEventListener('click', e => { const r = e.target.closest('.row, .feat'); if (!r || r.dataset.i == null) return; e.preventDefault(); openCase(+r.dataset.i); });
   $('#v-close').addEventListener('click', closeCase);
+  const fromHash = () => { const i = bySlug(decodeURIComponent(location.hash.slice(1))); if (i >= 0 && cur !== i && manifest) openCase(i); };
+  addEventListener('hashchange', fromHash); fromHash();
   window.XSOpenCase = slug => { const i = bySlug(slug); if (i >= 0) openCase(i); };
   $('#v-prev').addEventListener('click', () => openCase((cur - 1 + X.projects.length) % X.projects.length));
   $('#v-next').addEventListener('click', () => openCase((cur + 1) % X.projects.length));
@@ -246,13 +249,13 @@
       ['.hero__portrait img', '.hero__h', '.hero__sub', '.hero__body', '.hero__act', '.hero__reply', '.hero__cap'].forEach(sel => $$(sel).forEach(el => { if (+getComputedStyle(el).opacity < .99) { el.style.opacity = 1; el.style.transform = 'none'; el.style.filter = 'none'; } })); }, 4500);
     document.addEventListener('visibilitychange', () => { if (!document.hidden && A) anime.running.forEach(a => a.seek(a.duration)); }, { once: true });
     const io = new IntersectionObserver(es => { const vis = es.filter(e => e.isIntersecting).map(e => e.target); if (!vis.length) return; vis.forEach(el => { io.unobserve(el); el.dataset.seen = 1; });
-      anime({ targets: vis, opacity: [0, 1], translateY: [22, 0], duration: 1400, delay: anime.stagger(100), easing: EASE }); }, { threshold: .1, rootMargin: '0px 0px -6% 0px' });
+      anime({ targets: vis, opacity: [0, 1], translateY: [12, 0], duration: 700, delay: anime.stagger(60), easing: EASE }); }, { threshold: 0, rootMargin: '0px 0px 15% 0px' });
     els.forEach(el => io.observe(el));
     new MutationObserver(() => $$('.rv').forEach(el => { if (!el.dataset.obs) { el.dataset.obs = 1; io.observe(el); } })).observe(document.body, { childList: true, subtree: true });
     const once = (el, fn, th = .25) => { if (!el) return; const o = new IntersectionObserver(es => { if (es[0].isIntersecting) { o.disconnect(); fn(); } }, { threshold: th }); o.observe(el); };
-    $$('.feat').forEach(f => f.style.clipPath = 'inset(0% 0% 100% 0%)');
-    once($('#three-row'), () => anime({ targets: '.feat', clipPath: ['inset(0% 0% 100% 0%)', 'inset(0% 0% 0% 0%)'], duration: 1500, delay: anime.stagger(180), easing: 'cubicBezier(.65,0,.15,1)' }), .15);
-    setTimeout(() => $$('.feat').forEach(f => { f.style.clipPath = 'none'; }), 9000);
+    $$('.feat').forEach(f => f.style.opacity = 0);
+    once($('#three-row'), () => anime({ targets: '.feat', opacity: [0, 1], translateY: [14, 0], duration: 800, delay: anime.stagger(90), easing: EASE }), 0);
+    setTimeout(() => $$('.feat').forEach(f => { f.style.opacity = 1; f.style.transform = 'none'; }), 5000);
     const w = $('#footword'); w.innerHTML = w.innerHTML.replace(/>([^<]+)</g, (m, s) => '>' + [...s].map(c => c === ' ' ? ' ' : `<span class="ch">${c}</span>`).join('') + '<');
     $$('#footword .ch').forEach(c => { c.style.transform = 'translateY(60%)'; c.style.opacity = 0; });
     once($('#foot'), () => anime({ targets: '#footword .ch', translateY: ['60%', '0%'], opacity: [0, 1], duration: 1300, delay: anime.stagger(55), easing: EASE }), .2);
