@@ -565,3 +565,99 @@ html:lang(zh) .viewer__sector,html:lang(zh) .feat__cap i,html:lang(zh) .try__for
   .foot__cols>div{min-width:0}
 }
 @media (max-width:900px){.foot__cols>div:first-child{grid-column:1/-1}}
+
+/* ---------- NUDGE ME: the lead film. Built from the site's own parts: a feat-card caption over the picture, the film tile's "Watch with sound" chip, svc-style text links ---------- */
+.nudge{padding:0 var(--m);margin-bottom:clamp(40px,4vw,64px)}
+.nudge__stage{position:relative}
+.nudge__frame{position:relative;aspect-ratio:16/9;max-width:100%;overflow:hidden;background:var(--night-2);cursor:pointer}
+.nudge__stage.playing .nudge__frame{cursor:auto}
+.nudge__frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:left center;background:#000}
+.nudge__film{object-fit:contain!important;object-position:center!important}
+.nudge__loop{z-index:1;transition:transform 1.6s var(--ease)}
+.nudge__frame:hover .nudge__loop{transform:scale(1.03)}
+.nudge__frame::after{content:'';position:absolute;inset:auto 0 0 0;height:70%;z-index:2;background:linear-gradient(0deg,rgba(10,15,23,.92) 0,rgba(10,15,23,.7) 40%,rgba(10,15,23,0));pointer-events:none;transition:opacity .5s var(--ease)}
+.nudge__stage .feat__cap{z-index:3;left:clamp(18px,2.2vw,32px);right:auto;bottom:clamp(18px,2.2vw,30px);max-width:60%;pointer-events:none}
+.nudge__h{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,56px);line-height:1.05;letter-spacing:.02em}
+.nudge__h span{font-family:'Noto Serif SC',var(--serif);font-weight:500;letter-spacing:.02em;white-space:nowrap}
+.nudge__go{position:absolute;z-index:3;right:clamp(18px,2.2vw,32px);bottom:clamp(18px,2.2vw,30px);font-size:14px;padding:10px 16px;background:rgba(10,15,23,.72);color:var(--ivory);transition:background-color .35s var(--ease),color .35s var(--ease)}
+.nudge__go:hover,.nudge__go:focus-visible{background:var(--gold);color:var(--gold-ink)}
+.nudge__stage.playing .nudge__loop,.nudge__stage.playing .nudge__go,.nudge__stage.playing .feat__cap,.nudge__stage.playing .nudge__frame::after{opacity:0;visibility:hidden;pointer-events:none}
+.nudge__stage.playing .nudge__film{z-index:4}
+.nudge__stage.failed .nudge__go{background:var(--ivory);color:var(--night)}
+.nudge__stage.loading .nudge__go{background:var(--gold);color:var(--gold-ink)}
+.nudge__foot{display:grid;grid-template-columns:repeat(12,1fr);gap:16px 24px;padding-top:16px;align-items:baseline}
+.nudge__line{grid-column:1/7;color:var(--mute);font-size:16px;max-width:60ch}
+.nudge__act{grid-column:7/13;justify-self:end;display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:baseline;gap:10px 28px;font-size:16px}
+.nudge__act .nudge__more{color:var(--mute);font-size:15px}
+.nudge__ch{display:flex;flex-wrap:wrap;gap:4px 28px;padding-top:18px;font-size:15px}
+.nudge__ch button{display:inline-flex;align-items:baseline;gap:8px;padding:6px 0;color:var(--ivory);opacity:.85;transition:opacity .3s}
+.nudge__ch button:hover,.nudge__ch button:focus-visible{opacity:1}
+.nudge__ch b{font-weight:400;font-family:var(--serif);font-size:18px}
+.nudge__ch i{font-style:normal;color:var(--mute);font-variant-numeric:tabular-nums}
+@media (max-width:900px){
+  .nudge__foot{grid-template-columns:1fr}.nudge__line,.nudge__act{grid-column:1/-1}
+  .nudge__act{justify-self:start;justify-content:flex-start;flex-direction:column;align-items:flex-start;gap:4px}
+  .nudge__act .tl{padding:10px 0}
+}
+@media (max-width:600px){
+  /* phones: a taller frame before play so the lead film outweighs the tiles below; 16:9 again once it plays */
+  .nudge__frame{aspect-ratio:1/1}
+  .nudge__stage.playing .nudge__frame{aspect-ratio:16/9}
+  .nudge__stage .feat__cap{max-width:none;right:18px;bottom:66px}
+  .nudge__h{font-size:30px}.nudge__stage .feat__cap i{font-size:16px}
+  .nudge__go{left:18px;right:auto;bottom:18px;font-size:14px}
+}
+
+/* case-study page: the film as the hero (like the home page's photo hero), sechead rows, film-tile captions, the contact split and the curtain footer */
+.nm-film{padding-top:clamp(88px,9vw,120px)}
+.nm-intro{color:var(--mute);font-size:17px;max-width:56ch;padding-top:22px}
+.nm-sec{padding-top:var(--sec)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1.2vw,18px);padding:0 var(--m)}
+.pair figure{margin:0;cursor:pointer}
+.pair video{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--night-2)}
+.cmp{--x:50%;position:relative;aspect-ratio:16/9;max-width:calc(100% - 2*var(--m));overflow:hidden;user-select:none;-webkit-user-select:none;touch-action:pan-y;margin:0 var(--m);cursor:ew-resize}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.cmp .cmp__b{clip-path:inset(0 0 0 var(--x))}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;pointer-events:none}
+.cmp__line{position:absolute;top:0;bottom:0;left:var(--x);width:2px;margin-left:-1px;background:var(--ivory);pointer-events:none}
+.cmp__line b{position:absolute;bottom:18px;font-family:var(--serif);font-weight:400;font-size:17px;white-space:nowrap;padding:6px 12px;background:rgba(10,15,23,.72);color:var(--ivory)}
+.cmp__line b:first-child{right:10px}
+.cmp__line b:last-child{left:10px;background:var(--ivory);color:var(--night)}
+.cmp:focus-within .cmp__line{background:var(--gold);box-shadow:0 0 0 3px var(--night)}
+.cmp:focus-within .cmp__line b:last-child{background:var(--gold)}
+.cmp__line b{transition:opacity .2s}
+.cmp.lo .cmp__line b:first-child,.cmp.hi .cmp__line b:last-child{opacity:0}
+.devs{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,3vw,44px) clamp(10px,1.2vw,18px);padding:0 var(--m)}
+.devs figure{margin:0}
+.devs img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:var(--night-2)}
+.devs .film__c{display:block}
+.devs .film__c i{display:block;margin-top:4px;font-family:var(--sans);font-size:15px;line-height:1.5;max-width:46ch}
+.nm-close{margin-top:var(--sec)}
+.nm-close .contact__img{object-position:70% center}
+.nm-close .close__q{font-family:var(--serif);font-size:clamp(22px,1.9vw,28px);line-height:1.3;color:var(--paper-gold);min-height:1.35em}
+.nm-close .close__q.typing::after{content:'';display:inline-block;width:2px;height:1em;margin-left:3px;background:var(--paper-gold);vertical-align:-.12em}
+.nm-close .contact__card>p:not(.close__q){font-size:17px}
+.nm-close .btn{align-self:flex-start;background:var(--paper-ink);color:var(--paper);margin-top:8px}
+.nm-close .btn:hover{background:var(--paper-gold)}
+.nav__back{display:none;font-size:14px}
+@media (max-width:900px){
+  .nav__back{display:inline-block;padding:12px 0;margin-block:-12px}
+  .devs{grid-template-columns:1fr;gap:28px}
+  .nm-close .btn{align-self:stretch}
+}
+@media (max-width:600px){.pair{grid-template-columns:1fr;gap:28px}}
+
+/* Chinese: no stranded last character on big headings */
+html:lang(zh) .h2,html:lang(zh) .nudge__h{text-wrap:balance;line-break:strict}
+html:lang(zh) .h2 em{white-space:nowrap}
+.sechead>*,.contact__card,.contact__card>*{min-width:0}
+html:lang(zh) .contact__card .h2{max-width:11em}
+
+/* footer: let the columns shrink instead of overflowing on small screens (site-wide fix) */
+.foot{grid-template-columns:minmax(0,1fr)}
+.foot__cols{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:900px){.foot__cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.foot__cols p{overflow-wrap:anywhere}
+
+/* case page: room between the long AI note and the XAVIER wordmark on phones */
+@media (max-width:900px){.nm .foot__word{margin-top:32px}}
