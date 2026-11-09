@@ -1,232 +1,245 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Xavier Studio · Brands, websites and films for small shops</title>
-<meta name="description" content="Brands, websites and short films for small shops. English and 中文. WhatsApp us for a written plan and quote.">
+<title>Xavier Studio · Brand, product, film and print</title>
+<meta name="description" content="A three-person studio for brand, product visuals, film and print. AI where it is faster, craft where it counts. English and 中文.">
 <link rel="canonical" href="https://xavier-studio.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://xavier-studio.github.io/">
 <meta property="og:site_name" content="Xavier Studio">
 <meta property="og:locale" content="en_GB">
 <meta property="og:locale:alternate" content="zh_CN">
-<meta property="og:title" content="Xavier Studio · Small shops, made to look grand">
-<meta property="og:description" content="Brands, websites and short films for small shops. 为小店做品牌、网站和短片。">
-<meta property="og:image" content="https://xavier-studio.github.io/assets/og.jpg">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Xavier Studio · Brand, product, film and print">
+<meta property="og:description" content="A three-person studio for brand, product visuals, film and print. AI where it is faster, craft where it counts. English and 中文.">
+<meta property="og:image" content="https://xavier-studio.github.io/assets/og-v3.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Melvin Pang at a shophouse at dusk: I ran the front desk before I designed the sign.">
+<meta property="og:image:alt" content="Xavier Studio: We direct the AI. You get the brand.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Xavier Studio · Small shops, made to look grand">
-<meta name="twitter:description" content="Brands, websites and short films for small shops. 为小店做品牌、网站和短片。">
-<meta name="twitter:image" content="https://xavier-studio.github.io/assets/og.jpg">
+<meta name="twitter:title" content="Xavier Studio · Brand, product, film and print">
+<meta name="twitter:description" content="A three-person studio for brand, product visuals, film and print. AI where it is faster, craft where it counts. English and 中文.">
+<meta name="twitter:image" content="https://xavier-studio.github.io/assets/og-v3.jpg">
 <meta name="theme-color" content="#0A0F17">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Xavier Studio","url":"https://xavier-studio.github.io/","image":"https://xavier-studio.github.io/assets/og.jpg","logo":"https://xavier-studio.github.io/assets/icon-512.png","description":"Brands, websites and short films for small shops.","telephone":"+60125272682","founder":{"@type":"Person","name":"Melvin Pang"},"contactPoint":{"@type":"ContactPoint","contactType":"sales","telephone":"+60125272682","url":"https://wa.me/60125272682","availableLanguage":["en","zh-Hans","ms","yue"]},"knowsAbout":["Brand identity","Website design","Brand films"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Xavier Studio","url":"https://xavier-studio.github.io/","logo":"https://xavier-studio.github.io/assets/icon-512.png","description":"Brand, product, film and print studio. AI where it is faster, craft where it counts.","email":"xavierstudio666@gmail.com","founder":{"@type":"Person","name":"Melvin Pang"},"employee":[{"@type":"Person","name":"Christopher Hoe"},{"@type":"Person","name":"Mulder Hoe"}],"contactPoint":{"@type":"ContactPoint","contactType":"sales","url":"https://wa.me/60125272682","availableLanguage":["en","zh-Hans","zh-Hant","ms","yue"]}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display:ital@0;1&family=Work+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display:ital@0;1&family=Work+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="v3.css">
+<script>document.documentElement.className="js";try{if(sessionStorage.getItem("xs-intro"))document.documentElement.classList.add("seen")}catch(e){}if(matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("rm")</script>
 </head>
 <body>
-
+<div class="loader" id="loader" aria-hidden="true"><div class="loader__in"><img src="assets/xs-horizontal-600.png" alt="" width="180" height="48"><div class="loader__bar"><i></i></div></div></div>
 <header class="nav" id="nav">
   <a class="nav__logo" href="#top"><img src="assets/xs-horizontal-300.png" srcset="assets/xs-horizontal-300.png 300w, assets/xs-horizontal-600.png 600w" sizes="150px" alt="Xavier Studio" width="150" height="40"></a>
-  <nav class="nav__links" aria-label="Main">
-    <a href="#index" data-t="nav.work">Work</a><a href="#films" data-t="nav.films">Films</a><a href="#try" data-t="nav.try">Try it</a><a href="#studio" data-t="nav.studio">Studio</a><a href="#contact" data-t="nav.contact">Contact</a>
-  </nav>
-  <div class="nav__r"><button class="lang" id="lang" type="button" aria-label="EN / 中文: switch language, 切换语言"><span data-l="en">EN</span> / <span data-l="zh">中文</span></button><a class="nav__wa" href="https://wa.me/60125272682?text=BRAND" target="_blank" rel="noopener">WhatsApp</a><button class="nav__menu" id="menu" type="button" aria-expanded="false" aria-controls="mnav"><i aria-hidden="true"></i><span data-t="nav.menu">Menu</span></button></div>
+  <nav class="nav__links" aria-label="Main"><a href="#work" data-t="nav.work">Work</a><a href="#studio" data-t="nav.studio">Studio</a></nav>
+  <div class="nav__r"><div class="lang" role="group" aria-label="Language / 语言 / 語言"><button type="button" data-l="en" class="on" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-l="zh" aria-pressed="false" lang="zh-Hans">简体</button><span aria-hidden="true">/</span><button type="button" data-l="tw" aria-pressed="false" lang="zh-Hant">繁體</button></div><a class="nav__wa" data-wa href="https://wa.me/60125272682" target="_blank" rel="noopener" data-t="nav.wa">WhatsApp</a></div>
 </header>
-
-<!-- phones: section menu -->
-<div class="mnav" id="mnav" hidden>
-  <nav class="mnav__in" aria-label="Sections">
-  <div class="mnav__links">
-    <a href="#index" data-t="nav.work">Work</a><a href="#films" data-t="nav.films">Films</a><a href="#try" data-t="nav.try">Try it</a><a href="#services" data-t="nav.services">Services</a><a href="#studio" data-t="nav.studio">Studio</a><a href="#contact" data-t="nav.contact">Contact</a>
+<nav class="mnav" aria-label="Main (mobile)"><a href="#work" data-t="nav.work">Work</a><a href="#studio" data-t="nav.studio">Studio</a><a data-wa href="https://wa.me/60125272682" target="_blank" rel="noopener">WhatsApp</a></nav>
+<main id="top">
+<section class="intro">
+  <h1 class="intro__h hero-rv" data-t="intro.h">We direct the AI.<br>You get the <em>brand.</em></h1>
+  <p class="intro__p hero-rv" data-t="intro.p">Brand, product, film and print, made by a three-person studio. AI where it is faster, craft where it counts.</p>
+  <div class="chips hero-rv" role="group" aria-label="Filter the work">
+    <button class="chip" type="button" data-f="featured" aria-pressed="true"><b data-t="f.feat">Featured</b><span>8</span></button>
+    <button class="chip" type="button" data-f="all" aria-pressed="false"><b data-t="f.all">All</b><span>30</span></button>
+    <button class="chip" type="button" data-f="brand" aria-pressed="false"><b data-t="f.brand">Brand</b><span>20</span></button>
+    <button class="chip" type="button" data-f="product" aria-pressed="false"><b data-t="f.product">Product &amp; campaign</b><span>14</span></button>
+    <button class="chip" type="button" data-f="film" aria-pressed="false"><b data-t="f.film">Film &amp; music</b><span>14</span></button>
+    <button class="chip" type="button" data-f="print" aria-pressed="false"><b data-t="f.print">Posters &amp; print</b><span>8</span></button>
   </div>
-  <div class="mnav__foot"><a class="btn" href="https://wa.me/60125272682?text=BRAND" target="_blank" rel="noopener" data-t="nav.wa">Message on WhatsApp</a><p class="mnav__reply" data-t="c.reply">We reply on WhatsApp the same day.</p></div>
-  </nav>
+</section>
+<div id="work"></div>
+<section class="feat" aria-labelledby="feat-h">
+  <div class="sec-head"><h2 id="feat-h" data-t="feat.h">Selected work</h2></div>
+  <div class="feat__grid" id="feat"><!--feat--><button class="card" type="button" data-p="suvana" data-i="0">
+        <div class="card__media"><video muted="" playsinline="" loop="" preload="none" width="720" height="720" style="aspect-ratio:720/720" poster="assets/v3/suvana-04.jpg" data-src="assets/v3/suvana-04-loop.mp4" aria-label="Suvana · Fashion campaign · LED runway film"></video><span class="card__play">▶ Film</span></div>
+        <div class="card__cap"><span class="card__t">Suvana</span><span class="card__type"><span class="card__c">Client</span> · Fashion campaign · LED runway film</span><span class="card__l">AI campaign models for a handbag label, and the 2-minute LED film that opened its runway show. A rush job, delivered in one day.</span></div></button><button class="card" type="button" data-p="scavenger" data-i="0">
+        <div class="card__media"><video muted="" playsinline="" loop="" preload="none" width="1280" height="548" style="aspect-ratio:1280/548" poster="assets/v3/scavenger-trailer-01.jpg" data-src="assets/v3/scavenger-trailer-01-loop.mp4" aria-label="The Scavenger 拾荒者 · Series trailer · Character design"></video><span class="card__play">▶ Film</span></div>
+        <div class="card__cap"><span class="card__t">The Scavenger 拾荒者</span><span class="card__type">Series trailer · Character design</span><span class="card__l">A 56-second trailer for an original AI drama series: world, characters, score and titles.</span></div></button><button class="card" type="button" data-p="nudge" data-i="0">
+        <div class="card__media"><video muted="" playsinline="" loop="" preload="none" width="1280" height="720" style="aspect-ratio:1280/720;object-position:left center" poster="assets/v3/nudge-me-01.jpg" data-src="assets/v3/nudge-me-01-loop.mp4" aria-label="NUDGE ME · Music video"></video><span class="card__play">▶ Film</span></div>
+        <div class="card__cap"><span class="card__t">NUDGE ME</span><span class="card__type">Music video</span><span class="card__l">A full music video built shot by shot: a nostalgic town, an old 3310 phone, one message never sent.</span></div></button><button class="card" type="button" data-p="kopitiam" data-i="0">
+        <div class="card__media"><img src="assets/v3/hua-mui-01-s.webp" width="1600" height="2143" style="aspect-ratio:1600/2143" srcset="assets/v3/hua-mui-01-s.webp 800w, assets/v3/hua-mui-01.webp 1600w" sizes="(max-width:900px) 100vw, 50vw" alt="Heritage kopitiam · Food images · Poster series" loading="lazy" decoding="async"></div>
+        <div class="card__cap"><span class="card__t">Heritage kopitiam</span><span class="card__type">Food images · Poster series</span><span class="card__l">AI food images and an anniversary poster series for an eighty-year-old kopitiam.</span></div></button><button class="card" type="button" data-p="editorial" data-i="0">
+        <div class="card__media"><img src="assets/v3/islamica-01-s.webp" width="1080" height="1198" style="aspect-ratio:1080/1198" srcset="assets/v3/islamica-01-s.webp 800w, assets/v3/islamica-01.webp 1600w" sizes="(max-width:900px) 100vw, 50vw" alt="Editorial publication · Key visuals · Carousel system" loading="lazy" decoding="async"></div>
+        <div class="card__cap"><span class="card__t">Editorial publication</span><span class="card__type">Key visuals · Carousel system</span><span class="card__l">Key visuals and a reusable carousel system, made as a pitch sample for a culture and faith publication.</span></div></button><button class="card" type="button" data-p="miralune" data-i="0">
+        <div class="card__media"><img src="assets/v3/miralune-01-s.webp" width="1200" height="896" style="aspect-ratio:1200/896" srcset="assets/v3/miralune-01-s.webp 800w, assets/v3/miralune-01.webp 1600w" sizes="(max-width:900px) 100vw, 50vw" alt="Miralune · Skincare brand · Packaging · Film" loading="lazy" decoding="async"></div>
+        <div class="card__cap"><span class="card__t">Miralune</span><span class="card__type">Skincare brand · Packaging · Film</span><span class="card__l">Name, mark, a four-product range and its launch film, for the ten minutes before sleep.</span></div></button><button class="card" type="button" data-p="black-lot" data-i="0">
+        <div class="card__media"><img src="assets/v3/black-lot-01-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/black-lot-01-s.webp 800w, assets/v3/black-lot-01.webp 1600w" sizes="(max-width:900px) 100vw, 50vw" alt="Black Lot · Pepper brand · Packaging" loading="lazy" decoding="async"></div>
+        <div class="card__cap"><span class="card__t">Black Lot</span><span class="card__type">Pepper brand · Packaging</span><span class="card__l">A single-estate pepper brand, from the tin and gift box to the crate in the field.</span></div></button><button class="card" type="button" data-p="ondo" data-i="0">
+        <div class="card__media"><img src="assets/v3/ondo-01-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/ondo-01-s.webp 800w, assets/v3/ondo-01.webp 1600w" sizes="(max-width:900px) 100vw, 50vw" alt="Ondo · Bathhouse brand · Film" loading="lazy" decoding="async"></div>
+        <div class="card__cap"><span class="card__t">Ondo</span><span class="card__type">Bathhouse brand · Film</span><span class="card__l">A bathhouse brand that reads its own temperature, carried from the steam wall to the locker token.</span></div></button><!--/feat--></div>
+</section>
+<section class="wall" aria-labelledby="wall-h">
+  <div class="wall__head" id="wall-head"><h2 id="wall-h" data-t="wall.h">More projects.</h2><p data-t="wall.p">One tile per project. Click or tap any of them to see the full set.</p></div>
+  <div class="wall__more" id="wall-more" hidden><button class="btn btn--line" type="button">See all 29 projects</button></div>
+  <div class="masonry" id="wall"><!--wall--><button class="tile" type="button" data-p="sera" data-i="0">
+        <span class="tile__m"><img src="assets/v3/sera-01-s.webp" width="1200" height="896" style="aspect-ratio:1200/896" srcset="assets/v3/sera-01-s.webp 800w, assets/v3/sera-01.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="SERA · Sheet-mask brand · Film" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>SERA</b><i>Sheet-mask brand · Film · 4 pieces</i></span></button><button class="tile" type="button" data-p="tiga-sudu" data-i="2">
+        <span class="tile__m"><img src="assets/v3/tiga-sudu-02-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/tiga-sudu-02-s.webp 800w, assets/v3/tiga-sudu-02.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Tiga Sudu · Kopitiam brand · Film" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Tiga Sudu</b><i>Kopitiam brand · Film · 4 pieces</i></span></button><button class="tile" type="button" data-p="chris-chris-coffee-fest" data-i="0">
+        <span class="tile__m"><img src="assets/v3/chris/chris-coffee-fest-s.webp" width="808" height="632" style="aspect-ratio:808/632" srcset="assets/v3/chris/chris-coffee-fest-s.webp 800w, assets/v3/chris/chris-coffee-fest.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Coffee Festival 2020 · Festival key visual" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Coffee Festival 2020</b><i>Festival key visual</i></span></button><button class="tile" type="button" data-p="sora" data-i="2">
+        <span class="tile__m"><img src="assets/v3/sora-residences-02-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/sora-residences-02-s.webp 800w, assets/v3/sora-residences-02.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Sora Residences · Property launch · Film" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Sora Residences</b><i>Property launch · Film · 4 pieces</i></span></button><button class="tile" type="button" data-p="laman-senja" data-i="0">
+        <span class="tile__m"><video muted="" playsinline="" loop="" preload="none" width="720" height="1280" style="aspect-ratio:720/1280" poster="assets/v3/laman-senja-01.jpg" data-src="assets/v3/laman-senja-01-loop.mp4" aria-label="Laman Senja Residences · Property launch teaser · Typography"></video><span class="tile__vid">▶ Film</span></span>
+        <span class="tile__cap"><b>Laman Senja Residences</b><i>Property launch teaser · Typography</i></span></button><button class="tile" type="button" data-p="chris-chris-panyttfodd" data-i="0">
+        <span class="tile__m"><img src="assets/v3/chris/chris-panyttfodd-s.webp" width="808" height="632" style="aspect-ratio:808/632" srcset="assets/v3/chris/chris-panyttfodd-s.webp 800w, assets/v3/chris/chris-panyttfodd.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Pånyttfödd · Skincare packaging" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Pånyttfödd</b><i>Skincare packaging</i></span></button><button class="tile" type="button" data-p="serene-harbor" data-i="0">
+        <span class="tile__m"><video muted="" playsinline="" loop="" preload="none" width="962" height="720" style="aspect-ratio:962/720" poster="assets/v3/serene-harbor-02.jpg" data-src="assets/v3/serene-harbor-02-loop.mp4" aria-label="Serene Harbor · Hotel amenity visuals"></video><span class="tile__vid">▶ Film</span></span>
+        <span class="tile__cap"><b>Serene Harbor</b><i>Hotel amenity visuals · 2 pieces</i></span></button><button class="tile" type="button" data-p="rumah-hujan" data-i="0">
+        <span class="tile__m"><img src="assets/v3/rumah-hujan-01-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/rumah-hujan-01-s.webp 800w, assets/v3/rumah-hujan-01.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Rumah Hujan · Boutique hotel brand" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Rumah Hujan</b><i>Boutique hotel brand · 3 pieces</i></span></button><button class="tile" type="button" data-p="chris-chris-jianying" data-i="0">
+        <span class="tile__m"><img src="assets/v3/chris/chris-jianying-s.webp" width="808" height="632" style="aspect-ratio:808/632" srcset="assets/v3/chris/chris-jianying-s.webp 800w, assets/v3/chris/chris-jianying.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="簡影 Studio · Logo" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>簡影 Studio</b><i>Logo</i></span></button><button class="tile" type="button" data-p="shophouse-88" data-i="0">
+        <span class="tile__m"><img src="assets/v3/shophouse-88-01-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/shophouse-88-01-s.webp 800w, assets/v3/shophouse-88-01.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Shophouse 88 · Co-working brand" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Shophouse 88</b><i>Co-working brand · 3 pieces</i></span></button><button class="tile" type="button" data-p="senja" data-i="0">
+        <span class="tile__m"><img src="assets/v3/senja-sambal-01-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/senja-sambal-01-s.webp 800w, assets/v3/senja-sambal-01.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Senja Sambal · Sambal brand · Poster" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Senja Sambal</b><i>Sambal brand · Poster · 3 pieces</i></span></button><button class="tile" type="button" data-p="chris-chris-dragon-house" data-i="0">
+        <span class="tile__m"><img src="assets/v3/chris/chris-dragon-house-s.webp" width="753" height="588" style="aspect-ratio:753/588" srcset="assets/v3/chris/chris-dragon-house-s.webp 800w, assets/v3/chris/chris-dragon-house.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Dragon House Aquarium · Logo · Lettering" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Dragon House Aquarium</b><i>Logo · Lettering</i></span></button><button class="tile" type="button" data-p="skinlab" data-i="0">
+        <span class="tile__m"><img src="assets/v3/skinlab-21-01-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/skinlab-21-01-s.webp 800w, assets/v3/skinlab-21-01.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Skinlab 21 · Clinic brand · Film" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Skinlab 21</b><i>Clinic brand · Film · 4 pieces</i></span></button><button class="tile" type="button" data-p="kroma" data-i="0">
+        <span class="tile__m"><img src="assets/v3/kroma-01-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/kroma-01-s.webp 800w, assets/v3/kroma-01.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Kroma · Shirt label · Film" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Kroma</b><i>Shirt label · Film · 4 pieces</i></span></button><button class="tile" type="button" data-p="chris-chris-hanwei" data-i="0">
+        <span class="tile__m"><img src="assets/v3/chris/chris-hanwei-s.webp" width="808" height="632" style="aspect-ratio:808/632" srcset="assets/v3/chris/chris-hanwei-s.webp 800w, assets/v3/chris/chris-hanwei.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Hanwei TCM Clinic · Shopfront signage" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Hanwei TCM Clinic</b><i>Shopfront signage</i></span></button><button class="tile" type="button" data-p="villa-serai" data-i="1">
+        <span class="tile__m"><img src="assets/v3/villa-serai-02-s.webp" width="941" height="1672" style="aspect-ratio:941/1672" srcset="assets/v3/villa-serai-02-s.webp 800w, assets/v3/villa-serai-02.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Villa Serai · Villa listing visuals" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Villa Serai</b><i>Villa listing visuals · 3 pieces</i></span></button><button class="tile" type="button" data-p="molar" data-i="0">
+        <span class="tile__m"><img src="assets/v3/molar-co-01-s.webp" width="1122" height="1402" style="aspect-ratio:1122/1402" srcset="assets/v3/molar-co-01-s.webp 800w, assets/v3/molar-co-01.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Molar Co · Kids' dental brand" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Molar Co</b><i>Kids' dental brand · 3 pieces</i></span></button><button class="tile" type="button" data-p="chris-chris-airline" data-i="0">
+        <span class="tile__m"><img src="assets/v3/chris/chris-airline-s.webp" width="808" height="632" style="aspect-ratio:808/632" srcset="assets/v3/chris/chris-airline-s.webp 800w, assets/v3/chris/chris-airline.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Airline identity · Logo" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Airline identity</b><i>Logo</i></span></button><button class="tile" type="button" data-p="pang-pang" data-i="0">
+        <span class="tile__m"><video muted="" playsinline="" loop="" preload="none" width="540" height="960" style="aspect-ratio:540/960" poster="assets/films/pang-pang.webp" data-src="assets/films/pang-pang-loop.mp4" aria-label="Pang Pang · Street-food brand · Film"></video><span class="tile__vid">▶ Film</span></span>
+        <span class="tile__cap"><b>Pang Pang</b><i>Street-food brand · Film · 2 pieces</i></span></button><button class="tile" type="button" data-p="sour-hour" data-i="0">
+        <span class="tile__m"><img src="assets/v3/sour-hour-01-s.webp" width="1080" height="1350" style="aspect-ratio:1080/1350" srcset="assets/v3/sour-hour-01-s.webp 800w, assets/v3/sour-hour-01.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Sour Hour · Bar brand · Poster" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Sour Hour</b><i>Bar brand · Poster · 2 pieces</i></span></button><button class="tile" type="button" data-p="chris-chris-hunger-houz" data-i="0">
+        <span class="tile__m"><img src="assets/v3/chris/chris-hunger-houz-s.webp" width="758" height="592" style="aspect-ratio:758/592" srcset="assets/v3/chris/chris-hunger-houz-s.webp 800w, assets/v3/chris/chris-hunger-houz.webp 1600w" sizes="(max-width:900px) 50vw, 33vw" alt="Hunger Houz · Crest logo" loading="lazy" decoding="async"></span>
+        <span class="tile__cap"><b>Hunger Houz</b><i>Crest logo</i></span></button><button class="tile" type="button" data-p="throttle" data-i="0">
+        <span class="tile__m"><video muted="" playsinline="" loop="" preload="none" width="406" height="720" style="aspect-ratio:406/720" poster="assets/v3/throttle-therapy-01.jpg" data-src="assets/v3/throttle-therapy-01-loop.mp4" aria-label="Throttle Therapy · Animated ride film"></video><span class="tile__vid">▶ Film</span></span>
+        <span class="tile__cap"><b>Throttle Therapy</b><i>Animated ride film</i></span></button><!--/wall--></div>
+  <p class="empty hide" id="empty" data-t="empty">Nothing in this filter yet.</p>
+</section>
+<div class="studio" id="studio">
+<section class="s-intro" aria-labelledby="studio-h">
+  <div class="s-side"><span class="cap rv" data-t="s.cap">The studio</span>
+    <dl class="s-facts rv">
+      <div><dt data-t="sf.k1">Team</dt><dd data-t="sf.v1">Three people</dd></div>
+      <div><dt data-t="sf.k2">Languages</dt><dd data-t="sf.v2">English · 中文 · Malay · Cantonese</dd></div>
+      <div><dt data-t="sf.k3">Reply</dt><dd data-t="sf.v3">Same day, on WhatsApp</dd></div>
+      <div><dt data-t="sf.k4">Files</dt><dd data-t="sf.v4">Print-ready and editable</dd></div>
+    </dl></div>
+  <h2 id="studio-h" class="rv" data-t="s.h">Three people. AI where it is faster, Adobe where it needs a <em>craftsman</em>, a story in every cut.</h2>
+  <p class="rv" data-t="s.p">Every piece on this site was made by the three of us. Melvin leads your project from first message to final file; Christopher and Mulder make sure nothing leaves the studio unfinished.</p>
+</section>
+<section class="team" aria-label="Team">
+  <ul class="partners partners--all rv">
+    <li><h3>Melvin Pang</h3><div class="role" data-t="p1.r">Founder · Creative Director, AI</div><p data-t="p1.p">Directs the AI: product visuals, brand films and campaigns. Leads every client in English, 中文, Malay and Cantonese.</p></li>
+    <li><h3>Christopher Hoe</h3><div class="role" data-t="p2.r">Partner · Design</div><p data-t="p2.p">Traditional design in Adobe: logos, signage, print and layout, delivered with editable source files.</p></li>
+    <li><h3>Mulder Hoe</h3><div class="role" data-t="p3.r">Partner · Video &amp; Story</div><p data-t="p3.p">Editing and storytelling: turns raw footage into reels and films with a beginning, a middle and an end.</p></li>
+  </ul>
+  <!-- Photos on hold until all three matching portraits are ready (Melvin: assets/founder-studio.webp). Then switch back to three <article class="person"> cards with .person__ph photos. -->
+</section>
+<section class="make" aria-labelledby="make-h">
+  <div class="sec-head"><h2 id="make-h" data-t="make.h">Six things, done properly.</h2></div>
+  <ol class="make__list">
+    <li class="make__row"><h3 data-t="m1.h">Brand &amp; identity</h3><p data-t="m1.p">Names, logos, colour and type, packaging and the guidelines that hold it together.</p><a class="tl" href="#brand" data-t="see">See the work</a></li>
+    <li class="make__row"><h3 data-t="m2.h">Product &amp; campaign visuals</h3><p data-t="m2.p">AI product images, models and campaign visuals, checked against your real product.</p><a class="tl" href="#product" data-t="see">See the work</a></li>
+    <li class="make__row"><h3 data-t="m3.h">Film, motion &amp; music</h3><p data-t="m3.p">Brand films, reels, trailers, LED screens and original music, cut to the beat.</p><a class="tl" href="#film" data-t="see">See the work</a></li>
+    <li class="make__row"><h3 data-t="m4.h">Posters, print &amp; signage</h3><p data-t="m4.p">Posters, menus, cards and shop signs, with print-ready Adobe files.</p><a class="tl" href="#print" data-t="see">See the work</a></li>
+    <li class="make__row"><h3 data-t="m5.h">Websites</h3><p data-t="m5.p">Landing pages and site fixes, built to load quickly and make it easy to message you.</p><a class="tl" data-wa href="https://wa.me/60125272682" target="_blank" rel="noopener" data-t="talk">Ask us</a></li>
+    <li class="make__row"><h3 data-t="m6.h">AI training for teams</h3><p data-t="m6.p">Hands-on online workshops in the tools we use every day.</p><a class="tl" href="#workshops" data-t="see.ws">See the workshop</a></li>
+  </ol>
+</section>
 </div>
-
-<main class="page" id="page">
-<!-- HERO -->
-<section class="hero" id="top">
-  <figure class="hero__portrait"><img src="assets/founder-night.webp" alt="Melvin Pang under a shophouse five-foot way at dusk" width="1536" height="1024" fetchpriority="high"></figure>
-  <div class="hero__text">
-    <h1 class="hero__h" data-th="hero.h">I RAN THE FRONT DESK <em>before</em> I DESIGNED THE SIGN.</h1>
-    <p class="hero__sub" data-th="hero.sub">SMALL SHOPS, <em>made to look</em> GRAND.</p>
-    <p class="hero__body" data-t="hero.body">Brands, websites and short films for small shops, by Melvin Pang, who spent fifteen years in hotels, HR and operations before opening the studio.</p>
-    <div class="hero__act"><a class="btn" href="#contact" data-t="hero.cta">Tell us about your shop</a><a class="tl" href="#index" data-t="hero.work">See the work ↓</a></div>
-    <p class="hero__reply" data-t="c.reply">We reply on WhatsApp the same day.</p>
+<section class="train" id="workshops" aria-labelledby="tr-h">
+  <div class="train__a">
+    <h2 id="tr-h" data-t="tr.h">AI video and image workshops for teams</h2>
+    <p data-t="tr.p">Live online and hands-on, shaped around what your team wants to learn. AI makes the work faster; the ideas and the final call stay with your people. You direct the AI; it does not decide for you.</p>
+    <p class="train__meta" data-t="tr.meta">Scheduled around your team · English or 中文 · Team or public classes</p>
+    <a class="btn" data-wa="workshop" href="https://wa.me/60125272682" target="_blank" rel="noopener" data-t="tr.btn">Ask about a workshop</a>
   </div>
-  <p class="hero__cap" data-t="hero.cap">Melvin Pang, founder</p>
+  <div class="train__b"><p class="train__lead" data-t="tr.lead">Teams often ask</p>
+  <ul class="train__list">
+    <li><a data-wa="tr.l1" data-t="tr.l1" href="https://wa.me/60125272682" target="_blank" rel="noopener">How do we edit videos with AI?</a></li>
+    <li><a data-wa="tr.l2" data-t="tr.l2" href="https://wa.me/60125272682" target="_blank" rel="noopener">How do we make product images with AI?</a></li>
+    <li><a data-wa="tr.l3" data-t="tr.l3" href="https://wa.me/60125272682" target="_blank" rel="noopener">Why do our AI images look fake, and how do we fix it?</a></li>
+    <li><a data-wa="tr.l4" data-t="tr.l4" href="https://wa.me/60125272682" target="_blank" rel="noopener">How do we keep our product looking the same in every image?</a></li>
+  </ul></div>
 </section>
-
-<!-- THREE OF SEVENTEEN -->
-<section class="three" id="three">
-  <div class="sechead rv"><h2 class="h2" data-th="three.h">Small shops, first.</h2><p data-t="three.p">A street-food stall, a kopitiam and a skin clinic: three of the seventeen projects below.</p></div>
-  <div class="three__row" id="three-row"></div>
-</section>
-
-<!-- THE INDEX -->
-<section class="index" id="index">
-  <div class="index__head"><h2 class="h2 rv" data-th="index.h">The whole collection.</h2><p class="rv" data-t="index.p">Seventeen projects, built the way we would build yours: studio concepts, one pitch and a set of samples, each clearly labelled. Drag the ring to turn it, point at a brand to stop it, click to open it.</p></div>
-  <div class="hall" id="hall" tabindex="0" role="region" aria-roledescription="carousel" aria-label="The collection: a turning ring of all 17 brands. Drag to turn it, use the arrow keys, or open the list below.">
-    <canvas id="hall-c"></canvas>
-    <div class="hud">
-      <div class="vignette"></div>
-      <div class="frame"></div>
-      <div class="focus" aria-live="polite">
-        <div class="counter"><span class="num" id="focus-num">01</span><i>/</i><span class="total" id="focus-total">16</span></div>
-        <div class="grp" id="focus-grp"></div>
-        <div class="name" id="focus-name"></div>
-        <div class="meta" id="focus-meta"></div>
-        <div class="dots" id="focus-dots"></div>
-        <div class="ctl"><button type="button" class="sq" id="f-prev" aria-label="Previous brand">&larr;</button><button type="button" class="btn" id="f-open" data-t="hall.open">Open the full project</button><button type="button" class="sq" id="f-next" aria-label="Next brand">&rarr;</button></div>
-      </div>
-      <div class="hint" data-t="hall.hint">Drag to explore</div>
-      <div class="paused" data-t="hall.paused">Paused</div>
-    </div>
-  </div>
-  <details class="index__list" id="index-list">
-    <summary data-t="hall.list">See all 17 as a list</summary>
-    <div class="index__body">
-      <ol class="rows" id="rows"><li><a class="row" href="#tiga-sudu" data-i="0"><span class="row__no">01</span><span class="row__name">Tiga Sudu</span><span class="row__sector">Kopitiam, shophouse breakfast</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#pang-pang" data-i="1"><span class="row__no">02</span><span class="row__name">Pang Pang</span><span class="row__sector">Street food, cart &amp; delivery</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#sour-hour" data-i="2"><span class="row__no">03</span><span class="row__name">Sour Hour</span><span class="row__sector">Sparkling sours, pop-up drinks</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#black-lot" data-i="3"><span class="row__no">04</span><span class="row__name">Black Lot</span><span class="row__sector">Pepper, single estate</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#skinlab-21" data-i="4"><span class="row__no">05</span><span class="row__name">Skinlab 21</span><span class="row__sector">Aesthetic clinic, plain language</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#molar-co" data-i="5"><span class="row__no">06</span><span class="row__name">Molar &amp; Co.</span><span class="row__sector">Family dental clinic, prices first</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#miralune" data-i="6"><span class="row__no">07</span><span class="row__name">Miralune</span><span class="row__sector">Skincare, night ritual</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#sera" data-i="7"><span class="row__no">08</span><span class="row__name">SERA</span><span class="row__sector">Sheet-mask skincare, fifteen minutes</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#sora-residences" data-i="8"><span class="row__no">09</span><span class="row__name">Sora Residences</span><span class="row__sector">Residential tower, sky terraces</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#rumah-hujan" data-i="9"><span class="row__no">10</span><span class="row__name">Rumah Hujan</span><span class="row__sector">Heritage hotel, eight rooms</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#ondo" data-i="10"><span class="row__no">11</span><span class="row__name">Ondo</span><span class="row__sector">Bathhouse, hot &amp; cold</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#shophouse-88" data-i="11"><span class="row__no">12</span><span class="row__name">Shophouse 88</span><span class="row__sector">Co-working, pre-war shophouse</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#iron-monsoon" data-i="12"><span class="row__no">13</span><span class="row__name">Iron Monsoon</span><span class="row__sector">Strength gym, no mirrors</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#kroma" data-i="13"><span class="row__no">14</span><span class="row__name">Kroma</span><span class="row__sector">Fashion label, checked cloth</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#waggle-co" data-i="14"><span class="row__no">15</span><span class="row__name">Waggle &amp; Co.</span><span class="row__sector">Pet grooming &amp; treats</span><span class="row__label">Studio concept, self-initiated</span></a></li><li><a class="row" href="#aries-group" data-i="15"><span class="row__no">16</span><span class="row__name">Aries Group</span><span class="row__sector">Website, funding &amp; NGO group</span><span class="row__label">Pitch concept, not commissioned</span></a></li><li><a class="row" href="#message-cards" data-i="16"><span class="row__no">17</span><span class="row__name">Message cards</span><span class="row__sector">Print, bilingual 4R cards</span><span class="row__label">Studio samples</span></a></li></ol>
-      <div class="travel" id="travel" aria-hidden="true"><img src="assets/work/tiga-sudu/cover.webp" alt="" id="travel-img" width="800" height="1000" loading="lazy"></div>
-    </div>
-  </details>
-</section>
-
-<!-- FILMS -->
-<section class="films" id="films">
-  <div class="sechead rv"><h2 class="h2" data-th="films.h">Films, made in‑house.</h2><p data-t="films.p">Designed and directed by the studio, with AI tools doing the rendering. Each film says what AI made. Click any film to watch it with sound.</p></div>
-  <article class="nudge" id="nudge" data-ta="nudge.alabel" aria-label="NUDGE ME · 右下角">
-    <div class="nudge__stage rv">
-      <div class="nudge__frame">
-      <video class="nudge__film" playsinline preload="none" data-poster="assets/nudge/poster.webp" data-ta="nudge.vlabel" aria-label="NUDGE ME, music video"><track kind="subtitles" srclang="zh-Hans" label="歌词 Lyrics" src="assets/nudge/lyrics.vtt"></video>
-      <video class="nudge__loop" muted playsinline preload="none" data-poster="assets/nudge/poster.webp" data-src="assets/nudge/preview.mp4" aria-hidden="true" tabindex="-1"></video>
-      <button class="nudge__go" type="button" data-t="nudge.play">▶ Nudge to watch with sound</button>
-      </div>
-      <div class="feat__cap"><h3 class="nudge__h">NUDGE ME <span lang="zh-Hans">· 右下角</span></h3><i data-t="nudge.sub">MV, for everyone who grew up on dial-up</i><small data-t="nudge.label">Studio original, not client work · 3:18</small></div>
-    </div>
-    <div class="nudge__foot">
-      <p class="nudge__line" data-t="nudge.line">Melvin directed, graded, set the type and edited. AI tools made the song, the stills and the clips.</p>
-      <p class="nudge__act"><a class="tl nudge__wa" data-wa="nudge" href="https://wa.me/60125272682?text=FILM" target="_blank" rel="noopener" data-t="nudge.cta">Same craft, up to 30 seconds, for your shop. WhatsApp FILM →</a><a class="tl nudge__more" href="nudge-me.html" data-t="nudge.more">How it was made →</a></p>
-    </div>
-  </article>
-  <div class="reel" id="reel"></div>
-</section>
-
-<!-- TRY IT -->
-<section class="try" id="try">
-  <div class="sechead rv"><h2 class="h2" data-th="try.h">Try it on your shop.</h2><p data-t="try.p">Type what you sell. We paint a name on a shopfront at dusk, picked for your kind of shop.</p></div>
-  <figure class="try__stage rv" id="stage"></figure>
-  <form class="try__form rv" id="tryform" autocomplete="off">
-    <label><span data-t="try.s1">I sell</span> <input id="what" maxlength="40"></label>
-    <label><span data-t="try.s2">in</span> <input id="where" maxlength="28"></label>
-    <button class="btn" type="submit" data-t="try.btn">Paint my sign</button>
-  </form>
-  <p class="try__ex" id="tryex"></p>
-  <p class="try__note" id="trynote"></p>
-  <p class="try__as" id="tryas" hidden></p>
-  <p class="try__send"><a class="btn" id="trywa" href="https://wa.me/60125272682?text=BRAND" target="_blank" rel="noopener" hidden>Send this sketch to Melvin on WhatsApp</a></p>
-</section>
-
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="sechead rv"><h2 class="h2" data-th="svc.h">Brand, website or film: where to begin.</h2><p data-t="svc.p">No menu prices. Message BRAND, WEB, FILM or AUDIT on WhatsApp, tell us what you sell, and you get a written plan and a quote back.</p></div>
-  <ol class="svc" id="svc"><li><span class="svc__k">BRAND<em>brand identity</em></span><span class="svc__d">Name, logo, colours and fonts, packaging, signage and launch posts. For new shops and rebrands.</span><a class="svc__a tl" href="https://wa.me/60125272682?text=BRAND" target="_blank" rel="noopener">WhatsApp BRAND →</a></li><li><span class="svc__k">WEB<em>website</em></span><span class="svc__d">A fast, bilingual site that sells on a phone. Design, build and launch. One-page to full site.</span><a class="svc__a tl" href="https://wa.me/60125272682?text=WEB" target="_blank" rel="noopener">WhatsApp WEB →</a></li><li><span class="svc__k">FILM<em>brand film</em></span><span class="svc__d">Short vertical films for Reels and TikTok, designed and directed in-house. 12 to 30 seconds.</span><a class="svc__a tl" href="https://wa.me/60125272682?text=FILM" target="_blank" rel="noopener">WhatsApp FILM →</a></li><li><span class="svc__k">AUDIT<em>free website audit</em></span><span class="svc__d">A written fix list for your current site. It's yours to keep, whether you hire us or not. No obligation.</span><a class="svc__a tl" href="https://wa.me/60125272682?text=AUDIT" target="_blank" rel="noopener">WhatsApp AUDIT →</a></li></ol>
-  <div class="how"><h3 class="how__h rv" data-t="svc.how">How it works</h3><ol class="how__steps" id="how"><li><span class="how__n">01</span><b>Message on WhatsApp</b><span>Send BRAND, WEB, FILM or AUDIT, and tell us what you sell and who buys it.</span></li><li><span class="how__n">02</span><b>A written plan</b><span>A short call, then a one-page plan with scope, timeline and quote. No surprise costs later.</span></li><li><span class="how__n">03</span><b>Two or three directions</b><span>Concepts shown on real things: your signboard, your bag, your phone screen. You pick one.</span></li><li><span class="how__n">04</span><b>Build and hand over</b><span>Final files, a simple brand guide and launch posts, ready to use on day one.</span></li></ol></div>
-</section>
-
-<!-- STUDIO -->
-<section class="studio" id="studio">
-  <figure class="studio__img rv"><img src="assets/founder-studio.webp" alt="Melvin Pang at his desk at night, with sign sketches and colour swatches" width="1536" height="1024" loading="lazy"></figure>
-  <div class="studio__text">
-    <h2 class="h2 rv" data-th="studio.h">The operator.</h2>
-    <p class="rv" data-t="studio.p1">Xavier Studio is run by Melvin Pang. Before the studio, he spent fifteen years in hotels, HR and operations: front desks, rosters and the WhatsApp chat at 11pm.</p>
-    <p class="rv" data-t="studio.p2">So the work starts from how a shop really runs, not only from how the logo looks. Every project is directed by him, with AI tools doing the heavy rendering. Ask, and he will tell you which is which.</p>
-    <div class="about rv"><p class="about__h" data-t="studio.bh">Before the studio</p><ul class="about__list"><li data-t="studio.b1">Ran a 90-room city hotel day to day: front desk, housekeeping, online rates and the complaints.</li><li data-t="studio.b2">General manager of a hill resort.</li><li data-t="studio.b3">Five years running HR for a regional group, and leading its visual marketing team from 2024.</li><li data-t="studio.b4">Now: brands, websites and films for shops like those.</li></ul></div>
-    <dl class="ledger rv"><div><dt data-t="studio.k1">Years in operations</dt><dd data-t="studio.v1">15</dd></div><div><dt data-t="studio.k2">Replies</dt><dd data-t="studio.v2">Same day</dd></div><div><dt data-t="studio.k3">Languages</dt><dd data-t="studio.v3">English · 中文 · Malay · Cantonese</dd></div></dl>
+<section class="steps" aria-labelledby="how-h">
+  <div class="sec-head"><h2 id="how-h" data-t="how.h">Four steps.</h2></div>
+  <div class="steps__grid">
+    <div class="step"><div class="n">1</div><h3 data-t="st1.h">Message us</h3><p data-t="st1.p">WhatsApp or email. Tell us the product, the audience and the deadline.</p></div>
+    <div class="step"><div class="n">2</div><h3 data-t="st2.h">We show you the direction</h3><p data-t="st2.p">Depending on the job, a short sample or a written plan, so you see where it is going before you commit.</p></div>
+    <div class="step"><div class="n">3</div><h3 data-t="st3.h">A quote built around your budget</h3><p data-t="st3.p">A clear quote in your currency, with what is included and what is not.</p></div>
+    <div class="step"><div class="n">4</div><h3 data-t="st4.h">Build and hand over</h3><p data-t="st4.p">We agree the terms with you, then build, revise and hand over final files, ready to post, print or publish.</p></div>
   </div>
 </section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <img class="contact__img" src="assets/photos/rumah-hujan-3.webp" alt="Rain falling into a shophouse air-well, from the Rumah Hujan concept" width="1440" height="1799" loading="lazy">
-  <div class="contact__card rv">
-    <h2 class="h2" data-th="c.h">Tell us about your shop.</h2>
-    <p data-t="c.p">Three short answers. The button opens WhatsApp with your message already written, so you only press send.</p>
-    <form class="cform" id="cform" autocomplete="on">
-      <label><span data-t="c.name">Your name</span><input id="c-name" name="name" maxlength="60"></label>
-      <label><span data-t="c.what">What you sell, and where</span><input id="c-what" name="what" maxlength="100"></label>
-      <fieldset class="cform__need"><legend data-t="c.need">What you need</legend>
-        <label><input type="radio" name="need" value="BRAND" checked><span data-t="c.n1">A brand</span></label>
-        <label><input type="radio" name="need" value="WEB"><span data-t="c.n2">A website</span></label>
-        <label><input type="radio" name="need" value="FILM"><span data-t="c.n3">A short film</span></label>
-        <label><input type="radio" name="need" value="AUDIT"><span data-t="c.n4">A free website audit</span></label>
-      </fieldset>
-      <a class="btn" id="c-send" href="https://wa.me/60125272682?text=BRAND" target="_blank" rel="noopener" data-t="c.btn">Open WhatsApp with my message</a>
-      <p class="cform__note" data-t="c.note">We reply the same day. Or message +60 12‑527 2682 directly. Nothing is stored on this page.</p>
-    </form>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+  <div class="lb__top"><div><span class="lb__title" id="lb-title"></span><span class="lb__type" id="lb-type"></span></div><button class="lb__x" id="lb-x" type="button" data-t="close">Close</button></div>
+  <div class="lb__stage" id="lb-stage"><button class="lb__nav lb__prev" type="button" aria-label="Previous">←</button><button class="lb__nav lb__next" type="button" aria-label="Next">→</button></div>
+  <div class="lb__bot"><span class="lb__line" id="lb-line"></span><span><a class="tl hide" id="lb-case" href="#" data-t="case">Read the case</a>&nbsp;&nbsp;<span class="lb__count" id="lb-count"></span></span></div>
+</div>
+<section class="band" id="contact">
+  <div class="band__l">
+    <div class="lmx" id="logo-anim">
+    <div class="lmx__lock">
+      <div class="lmx__panel"><canvas class="lmx__c" aria-hidden="true"></canvas>
+      <svg class="lmx__svg" viewBox="0 0 3194 2852" overflow="visible" role="img" aria-labelledby="lmx-t"><title id="lmx-t">Xavier Studio</title>
+    <defs>
+      <linearGradient id="lmx-sheen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      <mask id="lmx-mark" maskUnits="userSpaceOnUse" x="0" y="0" width="3194" height="2852"><path fill="#fff" d="M283 90.5 L963 90.5 L2107.6 1421.5 L1427.6 1421.5 Z M228 1878.5 L908 1878.5 L1301 1421.5 L961 1026.1 Z"/><path fill="#fff" d="M1915.7 90.5 L2966 90.5 L2659.8 446.5 L1828.5 446.5 C1771.9 446.5 1726 492.4 1726 549 C1726 605.6 1771.9 651.5 1828.5 651.5 L2254 651.5 C2613.5 651.5 2896 934.3 2896 1358.5 C2896 1706.5 2705.9 1878.5 2464 1878.5 L1970.7 1878.5 C1874.7 1878.5 1785.5 1837.6 1722.9 1764.8 L1510.2 1517.5 L2686 1517.5 C2438.3 1117.9 2313.8 977.5 2084 977.5 L1852.4 977.5 L1427.6 483.6 L1667.9 204.2 C1730.5 131.4 1819.7 90.5 1915.7 90.5 Z"/></mask>
+      <mask id="lmx-mw" maskUnits="userSpaceOnUse" x="0" y="0" width="3194" height="2852"><rect class="lmx-rw" x="60" y="2100" width="3080" height="400" fill="#fff"/></mask>
+      <mask id="lmx-ml" maskUnits="userSpaceOnUse" x="0" y="0" width="3194" height="2852"><rect class="lmx-rl" x="0" y="2600" width="3194" height="160" fill="#fff"/></mask>
+    </defs>
+    <g class="lmx-guides" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke">
+      <line class="gd" x1="-6000" y1="90.5" x2="9000" y2="90.5" vector-effect="non-scaling-stroke"/>
+      <line class="gd" x1="-6000" y1="1878.5" x2="9000" y2="1878.5" vector-effect="non-scaling-stroke"/>
+      <line class="gd" x1="-6000" y1="2451.5" x2="9000" y2="2451.5" vector-effect="non-scaling-stroke"/>
+      <line class="gd" x1="283" y1="-3000" x2="283" y2="6000" vector-effect="non-scaling-stroke"/>
+      <line class="gd" x1="2966" y1="-3000" x2="2966" y2="6000" vector-effect="non-scaling-stroke"/>
+      <line class="gd" x1="1597" y1="-3000" x2="1597" y2="6000" vector-effect="non-scaling-stroke" stroke-dasharray="4 6"/>
+      <line class="gd gd-gold" x1="-1440" y1="-1910" x2="4300" y2="4765" vector-effect="non-scaling-stroke"/>
+      <line class="gd gd-gold" x1="1980" y1="-60" x2="-900" y2="3300" vector-effect="non-scaling-stroke"/>
+      <circle class="gd" cx="2433" cy="1265" r="610" vector-effect="non-scaling-stroke" stroke-dasharray="3 7"/>
+      <circle class="gd-pt" cx="283" cy="90.5" r="26"/><circle class="gd-pt" cx="1427.6" cy="1421.5" r="26"/><circle class="gd-pt" cx="2966" cy="90.5" r="26"/><circle class="gd-pt" cx="2433" cy="1265" r="26"/>
+      <text class="gd-t" x="340" y="-40">0, 0</text>
+      <text class="gd-t" x="2010" y="2040">49.3°</text>
+      <text class="gd-t" x="3080" y="1290">r 610</text>
+      <text class="gd-t" x="2560" y="-40">3194 × 2852</text>
+    </g>
+    <g class="lmx-mark"><path class="lmx-x" fill="#BD964D" d="M283 90.5 L963 90.5 L2107.6 1421.5 L1427.6 1421.5 Z M228 1878.5 L908 1878.5 L1301 1421.5 L961 1026.1 Z"/><path class="lmx-s" fill="#F4EFE6" d="M1915.7 90.5 L2966 90.5 L2659.8 446.5 L1828.5 446.5 C1771.9 446.5 1726 492.4 1726 549 C1726 605.6 1771.9 651.5 1828.5 651.5 L2254 651.5 C2613.5 651.5 2896 934.3 2896 1358.5 C2896 1706.5 2705.9 1878.5 2464 1878.5 L1970.7 1878.5 C1874.7 1878.5 1785.5 1837.6 1722.9 1764.8 L1510.2 1517.5 L2686 1517.5 C2438.3 1117.9 2313.8 977.5 2084 977.5 L1852.4 977.5 L1427.6 483.6 L1667.9 204.2 C1730.5 131.4 1819.7 90.5 1915.7 90.5 Z"/></g>
+    <g mask="url(#lmx-mark)"><rect class="lmx-sheen" x="-1400" y="0" width="1000" height="2000" fill="url(#lmx-sheen)" transform="skewX(-20)" opacity=".55"/></g>
+    <path class="lmx-w" mask="url(#lmx-mw)" fill="#F4EFE6" d="M192.3 2134.5L299.9 2242.1L407.5 2134.5L509.3 2134.5L350.8 2293L509.3 2451.5L407.5 2451.5L299.9 2343.9L192.3 2451.5L90.5 2451.5L249 2293L90.5 2134.5Z M669.9 2451.5L852.9 2134.5L936.9 2134.5L1119.9 2451.5L1036.8 2451.5L1001 2389.5L788.9 2389.5L753 2451.5Z M894.9 2205.8L823.5 2329.5L966.3 2329.5Z M1457.1 2451.5L1274.1 2134.5L1357.3 2134.5L1499.1 2380.2L1641 2134.5L1724.2 2134.5L1541.1 2451.5Z M1973.6 2134.5L1973.6 2451.5L1895.6 2451.5L1895.6 2134.5Z M2207.1 2134.5L2527.1 2134.5L2527.1 2194.5L2285.1 2194.5L2285.1 2259.8L2499.1 2259.8L2499.1 2319.8L2285.1 2319.8L2285.1 2391.5L2533.1 2391.5L2533.1 2451.5L2207.1 2451.5Z M2723.5 2134.5L2978.8 2134.5C3048.8 2134.5 3095.5 2175.1 3095.5 2235.9C3095.5 2296.8 3062.2 2337.4 3012.2 2337.4L3103.5 2451.5L3007.5 2451.5L2916.2 2337.4L2801.5 2337.4L2801.5 2451.5L2723.5 2451.5Z M2801.5 2194.5L2801.5 2277.4L2966.7 2277.4C2995.3 2277.4 3014.4 2260.8 3014.4 2235.9C3014.4 2211.1 2995.3 2194.5 2966.7 2194.5Z"/>
+    <path class="lmx-st" fill="#F4EFE6" d="M904.4 2763.2Q887.3 2763.2 871.6 2758Q856 2752.7 847 2744.4L854.9 2727.6Q863.5 2735.1 876.8 2740.1Q890.1 2745 904.4 2745Q917.5 2745 925.6 2742Q933.8 2739 937.6 2733.8Q941.5 2728.5 941.5 2721.9Q941.5 2714.1 936.5 2709.4Q931.4 2704.7 923.4 2701.8Q915.4 2698.9 905.7 2696.8Q896.1 2694.6 886.3 2691.8Q876.6 2688.9 868.5 2684.4Q860.5 2679.9 855.6 2672.2Q850.6 2664.6 850.6 2652.6Q850.6 2641.1 856.8 2631.3Q862.9 2621.6 875.6 2615.7Q888.4 2609.8 908.1 2609.8Q921.1 2609.8 934 2613.2Q946.9 2616.6 956.3 2623.1L949.2 2640.2Q939.6 2633.8 928.9 2630.9Q918.1 2628 908.1 2628Q895.4 2628 887.3 2631.2Q879.1 2634.4 875.4 2639.8Q871.6 2645.1 871.6 2651.8Q871.6 2659.7 876.7 2664.4Q881.7 2669.1 889.8 2671.9Q897.8 2674.7 907.4 2677Q917.1 2679.2 926.8 2682Q936.6 2684.8 944.6 2689.3Q952.6 2693.8 957.6 2701.3Q962.5 2708.8 962.5 2720.6Q962.5 2731.9 956.3 2741.7Q950.1 2751.4 937.1 2757.3Q924.1 2763.2 904.4 2763.2Z M1157 2761.5V2630.1H1105.6V2611.5H1229.7V2630.1H1178.2V2761.5Z M1448.6 2763.2Q1419.1 2763.2 1402.1 2746.3Q1385.2 2729.4 1385.2 2696.8V2611.5H1406.6V2695.9Q1406.6 2721 1417.7 2732.6Q1428.7 2744.1 1448.8 2744.1Q1469.2 2744.1 1480.2 2732.6Q1491.3 2721 1491.3 2695.9V2611.5H1512.1V2696.8Q1512.1 2729.4 1495.2 2746.3Q1478.4 2763.2 1448.6 2763.2Z M1689.4 2761.5V2611.5H1752.7Q1776.7 2611.5 1795 2620.9Q1813.3 2630.4 1823.5 2647.3Q1833.7 2664.2 1833.7 2686.5Q1833.7 2708.8 1823.5 2725.7Q1813.3 2742.6 1795 2752.1Q1776.7 2761.5 1752.7 2761.5ZM1710.9 2742.9H1751.4Q1770 2742.9 1783.6 2735.8Q1797.2 2728.7 1804.7 2716Q1812.2 2703.2 1812.2 2686.5Q1812.2 2669.6 1804.7 2656.9Q1797.2 2644.3 1783.6 2637.2Q1770 2630.1 1751.4 2630.1H1710.9Z M1999.9 2761.5V2611.5H2021.3V2761.5Z M2267.5 2763.2Q2250.4 2763.2 2235.7 2757.4Q2221 2751.6 2210.3 2741.2Q2199.6 2730.9 2193.6 2716.9Q2187.6 2703 2187.6 2686.5Q2187.6 2670 2193.6 2656.1Q2199.6 2642.1 2210.3 2631.8Q2221 2621.4 2235.6 2615.6Q2250.1 2609.8 2267.5 2609.8Q2284.6 2609.8 2299.1 2615.5Q2313.6 2621.1 2324.4 2631.5Q2335.2 2641.9 2341.1 2655.9Q2347 2669.8 2347 2686.5Q2347 2703.2 2341.1 2717.1Q2335.2 2731.1 2324.4 2741.5Q2313.6 2751.9 2299.1 2757.5Q2284.6 2763.2 2267.5 2763.2ZM2267.5 2744.1Q2279.9 2744.1 2290.5 2739.9Q2301.1 2735.6 2309 2727.8Q2316.8 2719.9 2321.2 2709.4Q2325.6 2698.9 2325.6 2686.5Q2325.6 2674.1 2321.2 2663.6Q2316.8 2653.1 2309 2645.2Q2301.1 2637.4 2290.5 2633.1Q2279.9 2628.9 2267.5 2628.9Q2254.9 2628.9 2244.2 2633.1Q2233.6 2637.4 2225.7 2645.2Q2217.8 2653.1 2213.4 2663.6Q2209 2674.1 2209 2686.5Q2209 2698.9 2213.4 2709.4Q2217.8 2719.9 2225.7 2727.8Q2233.6 2735.6 2244.2 2739.9Q2254.9 2744.1 2267.5 2744.1Z"/>
+    <path class="lmx-l" mask="url(#lmx-ml)" fill="#BD964D" d="M90.5 2675.8 L625.2 2675.8 L625.2 2697.2 L90.5 2697.2 Z M2568.8 2675.8 L3103.5 2675.8 L3103.5 2697.2 L2568.8 2697.2 Z"/>
+  </svg>
+      <button class="lmx__pp" type="button" aria-pressed="false" aria-label="Pause logo motion"><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><path fill="currentColor" d="M3 2h2.6v10H3zM8.4 2H11v10H8.4z"/></svg><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path fill="currentColor" d="M3.5 1.8 12 7l-8.5 5.2z"/></svg></button></div>
+      <div class="lmx__side"><p class="motto" data-t="motto">People set the direction.<br>AI sets the <em>pace.</em></p>
+        <p class="lmx__note" data-t="lm.note">Logo motion, built in code by the studio</p></div>
+    </div>
   </div>
+    <h2 class="band__h rv" data-t="band.h">Have a project <em>in mind?</em></h2>
+  </div>
+  <div class="band__r rv"><figure class="proof"><blockquote data-t="proof.q">“Tq so much able to help me rush in last min.”</blockquote><figcaption data-t="proof.by">Suvana, handbag label · delivered in one day</figcaption></figure>
+    <div class="threads"><p class="threads__k" data-t="th.k">On Threads</p>
+      <figure><blockquote data-t="th.q2">“Coffee, toast and the receipt on one table: it feels like breakfast just arrived. The concept has everyday warmth straight away.”</blockquote><figcaption data-t="th.c2"><span class="th-tr">Translated from Chinese</span>A reader, about our <a href="#tiga-sudu">Tiga Sudu film</a></figcaption></figure>
+      <figure><blockquote data-t="th.q1">“I was looking something like this!”</blockquote><figcaption data-t="th.c1">A Threads user looking for a housing-launch video, about our <a href="#laman-senja">Laman Senja teaser</a></figcaption></figure></div>
+    <p data-t="band.p">Tell us what you sell and who buys it. We reply the same day, usually with a first idea.</p>
+    <a class="btn" data-wa href="https://wa.me/60125272682" target="_blank" rel="noopener" data-t="band.btn">Message us on WhatsApp</a>
+    <a class="tl" href="mailto:xavierstudio666@gmail.com" data-t="band.mail">or email xavierstudio666@gmail.com</a></div>
 </section>
 </main>
-
-<!-- FOOTER: the page lifts like a curtain -->
-<footer class="foot" id="foot">
-  <div class="foot__cols">
-    <div><p class="foot__h" data-t="f.c1">Talk to us</p><p><a class="nowrap" href="https://wa.me/60125272682" target="_blank" rel="noopener">WhatsApp +60 12-527 2682</a></p></div>
-    <div><p class="foot__h" data-t="f.c2">Studio</p><p data-t="f.s2">Small shops anywhere, on WhatsApp.</p></div>
-    <div><p class="foot__h" data-t="f.c3">On this page</p><p><a href="#index" data-t="nav.work">Work</a> · <a href="#films" data-t="nav.films">Films</a> · <a href="#try" data-t="nav.try">Try it</a> · <a href="#studio" data-t="nav.studio">Studio</a> · <a href="#services" data-t="nav.services">Services</a> · <a href="#contact" data-t="nav.contact">Contact</a></p></div>
-    <div><p class="foot__h" data-t="f.c4">A note on AI</p><p data-t="f.ai">Brands shown are studio concepts, one pitch that was not commissioned, and samples, each labelled. Photos and films are made with AI tools and directed by Melvin.</p></div>
-  </div>
-  <p class="foot__word" id="footword" aria-hidden="true"><span>XAVIER</span> <em>studio</em></p>
-  <p class="foot__legal">© 2026 Xavier Studio</p>
-</footer>
-
-<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="v-name" hidden>
-  <div class="viewer__head" aria-hidden="true"><span id="vh-pos"></span><b id="vh-name"></b><span id="vh-label"></span></div>
-  <div class="viewer__info">
-    <button class="viewer__close" id="v-close" type="button" aria-label="Close">×</button>
-    <p class="viewer__pos" id="v-pos"></p>
-    <h3 class="viewer__name" id="v-name"></h3>
-    <p class="viewer__sector" id="v-sector"></p>
-    <p class="viewer__label" id="v-label"></p>
-    <p class="viewer__blurb" id="v-blurb"></p>
-    <p class="viewer__madeh" data-t="v.made">What we made</p>
-    <ul class="viewer__made" id="v-made"></ul>
-    <a class="btn" id="v-cta" href="https://wa.me/60125272682?text=BRAND" target="_blank" rel="noopener" data-t="v.cta">Want one like this? WhatsApp us</a>
-    <div class="viewer__nav"><button type="button" id="v-prev"><span aria-hidden="true">←</span> <span data-t="v.prev">Previous</span></button><button type="button" id="v-next"><span data-t="v.next">Next</span> <span aria-hidden="true">→</span></button></div>
-  </div>
-  <div class="viewer__media" id="v-media" tabindex="0" aria-label="Project images"></div>
-</div>
-
-<div class="player" id="player" role="dialog" aria-modal="true" aria-label="Film" hidden><button type="button" id="pclose" aria-label="Close">×</button><video id="pvideo" controls playsinline></video></div>
-
+<footer class="foot"><span data-t="foot.c">© 2026 Xavier Studio</span><span class="foot__links"><a href="#work" data-t="nav.work">Work</a><a href="#studio" data-t="nav.studio">Studio</a><a href="mailto:xavierstudio666@gmail.com">xavierstudio666@gmail.com</a><a data-wa href="https://wa.me/60125272682" target="_blank" rel="noopener">WhatsApp +60 12-527 2682</a></span></footer>
 <script src="vendor/anime.min.js"></script>
-<script src="data.js"></script>
-<script src="banks.js"></script>
-<script src="marks.js"></script>
-<script src="i18n.js"></script>
-<script src="site.js"></script>
-<script src="nudge.js"></script>
-<script>
-  /* Mirror Hall needs WebGL; without it the list opens instead. */
-  (function () { var ok = false; try { var c = document.createElement('canvas'); ok = !!(window.WebGLRenderingContext && (c.getContext('webgl') || c.getContext('experimental-webgl'))); } catch (e) {}
-    if (ok) document.documentElement.classList.add('webgl');
-    /* no WebGL, or a phone: open the list so the work can be scanned straight away */
-    if (!ok || window.innerWidth <= 900) document.getElementById('index-list').open = true; })();
-</script>
-<script type="module">
-  /* Mirror Hall loads only as the visitor nears the collection (keeps the first screen light). */
-  const hall = document.getElementById('hall'); let go = false
-  const load = () => { if (go || !document.documentElement.classList.contains('webgl')) return; go = true; import('./hall.bundle.js') }
-  if ('IntersectionObserver' in window) new IntersectionObserver((e, o) => { if (e.some(x => x.isIntersecting)) { o.disconnect(); load() } }, { rootMargin: '900px 0px' }).observe(hall); else load()
-  if (location.hash === '#index') load()
-</script>
+<script src="works.js"></script><script src="tw.js"></script><script src="dims.js"></script>
+<script src="v3.js"></script>
+<script src="logo-motion.js"></script>
 </body>
 </html>

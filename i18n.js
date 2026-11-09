@@ -1,5 +1,15 @@
 /* Xavier Studio · page text in English and Simplified Chinese. Edit copy here. data-th keys may use <em> (the hero keeps the CAPS + italic voice; section headings are plain sentence case). */
 window.T = {
+
+  /* home: work card in the hero, case links, the studio log, more films */
+  'hw.k': { en: 'Case studies', zh: '案例' }, 'hw.go': { en: 'Read the case study →', zh: '看完整案例 →' },
+  'hw.prev': { en: 'Previous case study', zh: '上一个案例' }, 'hw.next': { en: 'Next case study', zh: '下一个案例' }, 'hw.al': { en: 'Case studies from the studio', zh: '工作室案例' },
+  'three.k': { en: 'Case study', zh: '案例' },
+  'v.case': { en: 'Read the full case study →', zh: '看完整案例 →' },
+  'latest.h': { en: 'Latest from the studio.', zh: '工作室近况。' },
+  'latest.p': { en: 'New case studies and films, newest first.', zh: '最新的案例和影片，按时间排列。' },
+  'latest.go': { en: 'Read', zh: '阅读' },
+  'films.more': { en: 'See all ten films', zh: '看全部十支影片' }, 'films.moren': { en: '+6 more', zh: '还有 6 支' },
   'nav.work': { en: 'Work', zh: '作品' }, 'nav.films': { en: 'Films', zh: '影片' }, 'nav.try': { en: 'Try it', zh: '试一试' },
   'nav.studio': { en: 'Studio', zh: '工作室' }, 'nav.contact': { en: 'Contact', zh: '联系' },
   'nav.services': { en: 'Services', zh: '服务' }, 'nav.menu': { en: 'Menu', zh: '菜单' }, 'nav.close': { en: 'Close', zh: '关闭' },
@@ -10,10 +20,10 @@ window.T = {
   'hero.sub': { en: 'SMALL SHOPS, <em>made to look</em> GRAND.', zh: '小店，<em>也要</em>有大牌的样子。' },
   'hero.body': { en: 'Brands, websites and short films for small shops, by Melvin Pang, who spent fifteen years in hotels, HR and operations before opening the studio.', zh: '为小店做品牌、网站和短片。主理人 Melvin Pang（彭国浩）开工作室之前，在酒店、人事与营运岗位上做了十五年。' },
   'hero.cta': { en: 'Tell us about your shop', zh: '跟我们说说你的店' }, 'hero.work': { en: 'See the work ↓', zh: '看作品 ↓' },
-  'hero.cap': { en: 'Melvin Pang, founder', zh: '创办人 Melvin Pang' },
+  'hero.cap': { en: 'Melvin Pang, founder', zh: '创始人 Melvin Pang' },
 
   'three.h': { en: 'Small shops, first.', zh: '小店优先。' },
-  'three.p': { en: 'A street-food stall, a kopitiam and a skin clinic: three of the seventeen projects below.', zh: '一个街头小吃摊、一间咖啡店、一家医美诊所：下面十七个作品中的三个。' },
+  'three.p': { en: 'Three case studies, told start to finish: the brief, the idea and what it is built to do. Fourteen more projects below.', zh: '三个完整案例：简报、创意，以及它要做到的事。下面还有十四个项目。' },
 
   'index.h': { en: 'The whole collection.', zh: '全部作品。' },
   'index.p': { en: 'Seventeen projects, built the way we would build yours: studio concepts, one pitch and a set of samples, each clearly labelled. Drag the ring to turn it, point at a brand to stop it, click to open it.', zh: '十七个作品，都按给你做品牌的标准来做：工作室概念、一份提案和一组样品，每一件都标明是哪一种。拖动圆环转动，鼠标移到品牌上就停，点击即可打开。' },

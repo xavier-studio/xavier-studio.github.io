@@ -1,0 +1,60 @@
+/* Case pages in the v3 frame: same nav, contact band and footer as the main page. Loaded after site.css. */
+body.cs :focus-visible{outline:2px solid #EFE8DC;outline-offset:3px}
+body.cs .nav__logo{display:inline-flex;align-items:center;min-height:44px}
+body.cs .nav__links a{padding:8px 0;margin:0;opacity:.7}
+body.cs .nav__links a:hover{opacity:1}
+body.cs .nav .lang{padding:0;margin:0;background:none;border:0;border-radius:0;-webkit-backdrop-filter:none;backdrop-filter:none;min-height:44px;display:inline-flex;align-items:center;gap:4px;color:#A8A49C}
+body.cs .nav__wa{border:0;padding:0;min-height:44px;display:inline-flex;align-items:center;text-decoration:underline;text-decoration-color:rgba(239,232,220,.45);text-underline-offset:6px}
+body.cs .nav__wa::after{content:none}
+body.cs .btn:hover{background:#fff}
+body.cs .band{padding:clamp(96px,11vw,170px) var(--m);display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end;border-top:1px solid rgba(239,232,220,.14);background:#0A0F17;color:#EFE8DC}
+body.cs .band__h{grid-column:1/8;font-family:'Libre Caslon Display','Noto Serif SC',ui-serif,Georgia,serif;font-weight:400;font-size:clamp(40px,5.4vw,88px);line-height:1}
+body.cs .band__h em{color:#C9AD7E;font-style:italic}
+body.cs .band__r{grid-column:9/13;display:grid;gap:18px;justify-items:start}
+body.cs .band__r p{color:#A8A49C;font-size:15px}
+body.cs .band__mail{user-select:all}
+body.cs .foot{position:static;min-height:0;display:flex;justify-content:space-between;gap:10px 20px;flex-wrap:wrap;padding:28px var(--m) 40px;font-size:13px;color:#8A867F;border-top:1px solid rgba(239,232,220,.14);background:#0A0F17;overflow:visible}
+body.cs .foot a{color:#A8A49C}
+body.cs .foot__note{flex-basis:100%;max-width:72ch;margin-top:6px}
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:20;justify-content:space-around;background:rgba(10,15,23,.96);border-top:1px solid rgba(239,232,220,.14);padding:6px 0 calc(6px + env(safe-area-inset-bottom))}
+.mbar a{padding:0 18px;min-height:46px;display:inline-flex;align-items:center;font-size:14px;color:#A8A49C}
+@media (max-width:900px){
+  body.cs .nav{grid-template-columns:auto 1fr;height:64px}
+  body.cs .nav__links{display:none}
+  body.cs{padding-bottom:60px}
+  .mbar{display:flex}
+  body.cs .band__h,body.cs .band__r{grid-column:1/13}
+  body.cs .foot a{display:inline-block;padding:12px 0}
+}
+
+/* body text in Work Sans like the main page; display face only for headlines */
+body.cs .cs-ch__body,body.cs .cs-ledger dd,body.cs .cs-built__list li{font-family:'Work Sans','Noto Sans SC',ui-sans-serif,system-ui,sans-serif;font-size:16px;line-height:1.65}
+/* no roman numerals or 01/02 markers on case pages: numbers are kept for the four steps only */
+body.cs .cs-ch__i{font-size:0}
+body.cs .cs-ch__i span{font-size:12px}
+body.cs .cs-built__n{display:none}
+:lang(zh-Hans) body.cs em,:lang(zh-Hant) body.cs em{font-style:normal}
+:lang(zh-Hant){--serif:'Libre Caslon Display','Noto Serif TC',ui-serif,Georgia,serif;--sans:'Work Sans','Noto Sans TC',ui-sans-serif,system-ui,sans-serif}
+body.cs .nav .lang{color:#8A867F;display:inline-flex;align-items:center;gap:2px}
+body.cs .nav .lang button{min-height:44px;padding:0 6px;color:#A8A49C;background:none;border:0;font:inherit;cursor:pointer}
+body.cs .nav .lang .on{color:#EFE8DC}
+
+body.cs .foot__links{display:flex;flex-wrap:wrap;column-gap:24px}
+/* gold only on the hero's italic word and the CTA; labels go muted */
+body.cs .cs-eyebrow::before{background:#A8A49C}
+body.cs .cs-hero__label,body.cs .cs-ch__i,body.cs .cs-ch__i span{color:#A8A49C}
+body.cs .cs-next i{color:#A8A49C}
+body.cs .band__mail{text-decoration:underline;text-decoration-color:rgba(239,232,220,.35);text-underline-offset:6px}
+body.cs p{text-wrap:pretty}
+:lang(zh-Hans) body.cs :is(h1,h2,h3),:lang(zh-Hant) body.cs :is(h1,h2,h3){word-break:keep-all;overflow-wrap:anywhere}
+/* board viewer */
+.zv-open{cursor:zoom-in}
+.zv-open:focus-visible{outline:2px solid #EFE8DC;outline-offset:4px}
+.zv{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:rgba(6,9,14,.96);color:#EFE8DC}
+.zv::backdrop{background:rgba(6,9,14,.9)}
+.zv__scroll{position:absolute;inset:0;overflow:auto;display:grid;place-items:center;padding:max(56px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) 64px max(16px,env(safe-area-inset-left,0px));overscroll-behavior:contain}
+.zv__scroll img{display:block;max-width:100%;max-height:calc(100vh - 120px);width:auto;height:auto;cursor:zoom-in}
+.zv.is-zoom .zv__scroll{place-items:start}
+.zv.is-zoom .zv__scroll img{max-width:none;max-height:none;cursor:zoom-out}
+.zv__x{position:absolute;top:max(8px,env(safe-area-inset-top,0px));right:max(8px,env(safe-area-inset-right,0px));min-height:44px;min-width:44px;padding:0 14px;border:1px solid rgba(239,232,220,.35);background:rgba(6,9,14,.7);color:#EFE8DC;font:500 14px/1 "Work Sans",system-ui,sans-serif;cursor:pointer;z-index:2}
+.zv__hint{position:absolute;left:0;right:0;bottom:max(16px,env(safe-area-inset-bottom,0px));text-align:center;font:400 12px/1.4 "Work Sans",system-ui,sans-serif;color:rgba(239,232,220,.6);pointer-events:none;margin:0}
